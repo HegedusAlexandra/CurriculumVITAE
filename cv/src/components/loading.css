@@ -1,0 +1,383 @@
+.greeting {
+  width: 100%;
+  height: 100vh;
+  background-color: #000228;
+}
+
+.spanBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+  width: 600px;
+  height: 200px;
+  -webkit-animation: float 4s;
+          animation: float 4s;
+}
+
+.spanBox span {
+  color: whitesmoke;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100px;
+  margin: 4px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5), 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.spanBox #dot {
+  opacity: 0;
+  -webkit-animation: dot 6s;
+          animation: dot 6s;
+}
+
+@-webkit-keyframes float {
+  from {
+    -webkit-transform: translate(-40%, -50%);
+            transform: translate(-40%, -50%);
+  }
+  78% {
+    -webkit-transform: translate(-19%, -50%);
+            transform: translate(-19%, -50%);
+  }
+  to {
+    -webkit-transform: translate(-20%, -50%);
+            transform: translate(-20%, -50%);
+  }
+}
+
+@keyframes float {
+  from {
+    -webkit-transform: translate(-40%, -50%);
+            transform: translate(-40%, -50%);
+  }
+  78% {
+    -webkit-transform: translate(-19%, -50%);
+            transform: translate(-19%, -50%);
+  }
+  to {
+    -webkit-transform: translate(-20%, -50%);
+            transform: translate(-20%, -50%);
+  }
+}
+
+@-webkit-keyframes dot {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.01;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.01;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes water {
+  0% {
+    border-radius: 100% 84% 96% 88%;
+  }
+  15% {
+    border-radius: 108% 82% 100% 85%;
+  }
+  25% {
+    border-radius: 110% 78% 106% 79%;
+  }
+  35% {
+    border-radius: 103% 83% 101% 83%;
+  }
+  45% {
+    border-radius: 100% 88% 96% 90%;
+  }
+  55% {
+    border-radius: 95% 88% 92% 96%;
+  }
+  65% {
+    border-radius: 92% 95% 92% 103%;
+  }
+  75% {
+    border-radius: 90% 92% 88% 103%;
+  }
+  90% {
+    border-radius: 97% 87% 92% 95%;
+  }
+  100% {
+    border-radius: 100% 84% 96% 88%;
+  }
+}
+
+@keyframes water {
+  0% {
+    border-radius: 100% 84% 96% 88%;
+  }
+  15% {
+    border-radius: 108% 82% 100% 85%;
+  }
+  25% {
+    border-radius: 110% 78% 106% 79%;
+  }
+  35% {
+    border-radius: 103% 83% 101% 83%;
+  }
+  45% {
+    border-radius: 100% 88% 96% 90%;
+  }
+  55% {
+    border-radius: 95% 88% 92% 96%;
+  }
+  65% {
+    border-radius: 92% 95% 92% 103%;
+  }
+  75% {
+    border-radius: 90% 92% 88% 103%;
+  }
+  90% {
+    border-radius: 97% 87% 92% 95%;
+  }
+  100% {
+    border-radius: 100% 84% 96% 88%;
+  }
+}
+
+.water-droplet1 {
+  -webkit-animation: water 6s;
+          animation: water 6s;
+  width: 140.8px;
+  height: 147.84px;
+  border-radius: 100% 84% 96% 88%;
+  position: relative;
+  top: 6%;
+  left: 10%;
+  background: radial-gradient(ellipse at 22% 20%, #1e252d 0%, #1a1d33 28%, #7f7f7f 100%);
+  -webkit-box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+          box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+}
+
+.water-droplet1:after {
+  content: "";
+  position: absolute;
+  width: 108.24px;
+  height: 79.2px;
+  top: 31%;
+  left: 80%;
+  background: transparent;
+  border-radius: 100% 95% 96% 90%;
+  top: 12px;
+  left: 12px;
+  -webkit-box-shadow: 7px 19px 15px -10px white inset;
+          box-shadow: 7px 19px 15px -10px white inset;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.water-droplet2 {
+  -webkit-animation: water 6s;
+          animation: water 6s;
+  width: 128px;
+  height: 134.4px;
+  border-radius: 100% 84% 96% 88%;
+  position: relative;
+  top: 31%;
+  left: 80%;
+  background: radial-gradient(ellipse at 22% 20%, #1e252d 0%, #1a1d33 28%, #7f7f7f 100%);
+  -webkit-box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+          box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+}
+
+.water-droplet2:after {
+  content: "";
+  position: absolute;
+  width: 98.4px;
+  height: 72px;
+  top: 31%;
+  left: 80%;
+  background: transparent;
+  border-radius: 100% 95% 96% 90%;
+  top: 12px;
+  left: 12px;
+  -webkit-box-shadow: 7px 19px 15px -10px white inset;
+          box-shadow: 7px 19px 15px -10px white inset;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.water-droplet3 {
+  -webkit-animation: water 6s;
+          animation: water 6s;
+  width: 72px;
+  height: 75.6px;
+  border-radius: 100% 84% 96% 88%;
+  position: relative;
+  top: 25%;
+  left: 30%;
+  background: radial-gradient(ellipse at 22% 20%, #1e252d 0%, #1a1d33 28%, #7f7f7f 100%);
+  -webkit-box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+          box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+}
+
+.water-droplet3:after {
+  content: "";
+  position: absolute;
+  width: 55.35px;
+  height: 40.5px;
+  top: 25%;
+  left: 30%;
+  background: transparent;
+  border-radius: 100% 95% 96% 90%;
+  top: 12px;
+  left: 12px;
+  -webkit-box-shadow: 7px 19px 15px -10px white inset;
+          box-shadow: 7px 19px 15px -10px white inset;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.water-droplet4 {
+  -webkit-animation: water 6s;
+          animation: water 6s;
+  width: 48px;
+  height: 50.4px;
+  border-radius: 100% 84% 96% 88%;
+  position: relative;
+  top: 27.5%;
+  left: 20%;
+  background: radial-gradient(ellipse at 22% 20%, #1e252d 0%, #1a1d33 28%, #7f7f7f 100%);
+  -webkit-box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+          box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+}
+
+.water-droplet4:after {
+  content: "";
+  position: absolute;
+  width: 36.9px;
+  height: 27px;
+  top: 27.5%;
+  left: 20%;
+  background: transparent;
+  border-radius: 100% 95% 96% 90%;
+  top: 12px;
+  left: 12px;
+  -webkit-box-shadow: 7px 19px 15px -10px white inset;
+          box-shadow: 7px 19px 15px -10px white inset;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.water-droplet5 {
+  -webkit-animation: water 6s;
+          animation: water 6s;
+  width: 64px;
+  height: 67.2px;
+  border-radius: 100% 84% 96% 88%;
+  position: relative;
+  top: 26%;
+  left: 32%;
+  background: radial-gradient(ellipse at 22% 20%, #1e252d 0%, #1a1d33 28%, #7f7f7f 100%);
+  -webkit-box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+          box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+}
+
+.water-droplet5:after {
+  content: "";
+  position: absolute;
+  width: 49.2px;
+  height: 36px;
+  top: 26%;
+  left: 32%;
+  background: transparent;
+  border-radius: 100% 95% 96% 90%;
+  top: 12px;
+  left: 12px;
+  -webkit-box-shadow: 7px 19px 15px -10px white inset;
+          box-shadow: 7px 19px 15px -10px white inset;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.water-droplet6 {
+  -webkit-animation: water 6s;
+          animation: water 6s;
+  width: 160px;
+  height: 168px;
+  border-radius: 100% 84% 96% 88%;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  background: radial-gradient(ellipse at 22% 20%, #1e252d 0%, #1a1d33 28%, #7f7f7f 100%);
+  -webkit-box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+          box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+}
+
+.water-droplet6:after {
+  content: "";
+  position: absolute;
+  width: 123px;
+  height: 90px;
+  top: 10%;
+  left: 40%;
+  background: transparent;
+  border-radius: 100% 95% 96% 90%;
+  top: 12px;
+  left: 12px;
+  -webkit-box-shadow: 7px 19px 15px -10px white inset;
+          box-shadow: 7px 19px 15px -10px white inset;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.water-droplet7 {
+  -webkit-animation: water 6s;
+          animation: water 6s;
+  width: 80px;
+  height: 84px;
+  border-radius: 100% 84% 96% 88%;
+  position: relative;
+  top: 0%;
+  left: 2.5%;
+  background: radial-gradient(ellipse at 22% 20%, #1e252d 0%, #1a1d33 28%, #7f7f7f 100%);
+  -webkit-box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+          box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4), 5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4), 15px 15px 60px rgba(164, 164, 164, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+}
+
+.water-droplet7:after {
+  content: "";
+  position: absolute;
+  width: 61.5px;
+  height: 45px;
+  top: 0%;
+  left: 2.5%;
+  background: transparent;
+  border-radius: 100% 95% 96% 90%;
+  top: 12px;
+  left: 12px;
+  -webkit-box-shadow: 7px 19px 15px -10px white inset;
+          box-shadow: 7px 19px 15px -10px white inset;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+/*# sourceMappingURL=loading.css.map */

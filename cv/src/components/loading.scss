@@ -1,0 +1,171 @@
+
+
+
+.greeting{     
+    width: 100%;
+    height: 100vh;
+    
+    background-color: rgb(0, 2, 40);  
+}
+
+.spanBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-20%,-50%);
+
+    width: 600px;
+    height: 200px;
+    animation: float 4s;
+    
+
+    span{
+    
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    margin:4px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5), 
+    0px -4px 10px rgba(0, 0, 0, 0.5);
+    
+    }
+
+    #dot{
+       opacity: 0;
+       animation: dot 6s;
+    }
+    
+}
+
+// patissier
+
+@keyframes float {
+    from{transform: translate(-40%,-50%)}
+    78%{transform: translate(-19%,-50%)}
+    to{transform: translate(-20%,-50%)}
+}
+
+@keyframes dot {
+    from{opacity: 0;}
+    80%{opacity: 0.01;}
+    to{opacity: 1;}
+}
+
+
+// drops
+
+@mixin theme( $randm:1, $randp:1, $randpo:1) {
+    animation: water 6s;
+ 
+    
+   width: 160px * $randm;
+   height: 168px * $randm;
+    border-radius: 100% 84% 96% 88%;
+    position: relative;
+    top:50% * $randp;
+    left:50% * $randpo;
+    background: radial-gradient(
+      ellipse at 22% 20%,
+      rgb(30, 37, 45) 0%,
+      rgb(26, 29, 51) 28%,
+      rgb(127, 127, 127) 100%
+    );
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4),
+      5px 5px 6px rgba(91, 91, 91, 0.8), 15px 15px 40px rgba(0, 0, 0, 0.4),
+      15px 15px 60px rgba(164, 164, 164, 0.6),
+      -3px -3px 5px rgba(255, 255, 255, 0.8) inset;
+  }
+
+@mixin themed($randm:1, $randp:1, $randpo:1) {
+content: "";
+
+    position: absolute;
+    width: 123px * $randm;
+    height: 90px * $randm;
+    top:50% * $randp;
+    left:50% * $randpo;
+    background: transparent;
+    border-radius: 100% 95% 96% 90%;
+    top: 12px;
+    left: 12px;
+    box-shadow: 7px 19px 15px -10px rgb(255, 255, 255) inset;
+    transform: rotate(-20deg);
+    filter: blur(1px);
+}
+
+@keyframes water {
+    0% {border-radius: 100% 84% 96% 88%}
+    15% {border-radius: 108% 82% 100% 85%;}
+    25%{border-radius: 110% 78% 106% 79%;}
+    35% {border-radius: 103% 83% 101% 83%;}
+    45% {border-radius: 100% 88% 96% 90%;}
+    55% {border-radius: 95% 88% 92% 96%;}
+    65% {border-radius: 92% 95% 92% 103%;}
+    75%{border-radius: 90% 92% 88% 103%;}
+    90% {border-radius: 97% 87% 92% 95%;}
+    100% {border-radius: 100% 84% 96% 88%;}
+}
+  
+.water-droplet1 {
+    @include theme( $randm:0.88, $randp:0.12, $randpo:0.2);
+  }
+  
+.water-droplet1:after {
+    @include themed( $randm:0.88, $randp:0.62, $randpo:1.6);
+}
+
+.water-droplet2 {
+    @include theme( $randm:0.8, $randp:0.62, $randpo:1.6);
+  }
+  
+.water-droplet2:after {
+    @include themed( $randm:0.8, $randp:0.62, $randpo:1.6);
+}
+
+.water-droplet3 {
+    @include theme($randm:0.45, $randp:0.5, $randpo:0.6);
+  }
+  
+.water-droplet3:after {
+    @include themed( $randm:0.45, $randp:0.5, $randpo:0.6);
+}
+
+.water-droplet4 {
+    @include theme($randm:0.3, $randp:0.55, $randpo:0.4);
+  }
+  
+.water-droplet4:after {
+    @include themed( $randm:0.3, $randp:0.55, $randpo:0.40);
+}
+
+.water-droplet5 {
+    @include theme($randm:0.4, $randp:0.52, $randpo:0.64);
+  }
+  
+.water-droplet5:after {
+    @include themed( $randm:0.4, $randp:0.52, $randpo:0.64);
+}
+
+.water-droplet6 {
+    @include theme($randm:1, $randp:0.2, $randpo:0.8);
+  }
+  
+.water-droplet6:after {
+    @include themed( $randm:1, $randp:0.2, $randpo:0.8);
+}
+
+.water-droplet7 {
+    @include theme($randm:0.5, $randp:0, $randpo:0.05);
+  }
+  
+.water-droplet7:after {
+    @include themed($randm:0.5, $randp:0, $randpo:0.05);
+}
+
+
+
+
+
+
+
+
