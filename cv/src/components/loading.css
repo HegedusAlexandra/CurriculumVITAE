@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
 .greeting {
   width: 100%;
   height: 100vh;
-  background-color: #000228;
+  background-color: #010627;
 }
 
 .spanBox {
@@ -18,7 +19,7 @@
 
 .spanBox span {
   color: whitesmoke;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Quattrocento', serif;
   font-size: 100px;
   margin: 4px;
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5), 0px -4px 10px rgba(0, 0, 0, 0.5);
@@ -86,31 +87,31 @@
 
 @-webkit-keyframes water {
   0% {
-    border-radius: 100% 84% 96% 88%;
+    border-radius: 100% 84% 96% 85%;
   }
   15% {
-    border-radius: 108% 82% 100% 85%;
+    border-radius: 110% 82% 100% 85%;
   }
   25% {
-    border-radius: 110% 78% 106% 79%;
+    border-radius: 110% 83% 106% 79%;
   }
   35% {
-    border-radius: 103% 83% 101% 83%;
+    border-radius: 103% 83% 96% 83%;
   }
   45% {
-    border-radius: 100% 88% 96% 90%;
+    border-radius: 100% 88% 96% 96%;
   }
   55% {
     border-radius: 95% 88% 92% 96%;
   }
   65% {
-    border-radius: 92% 95% 92% 103%;
+    border-radius: 90% 95% 92% 103%;
   }
   75% {
-    border-radius: 90% 92% 88% 103%;
+    border-radius: 90% 87% 88% 103%;
   }
   90% {
-    border-radius: 97% 87% 92% 95%;
+    border-radius: 97% 87% 96% 95%;
   }
   100% {
     border-radius: 100% 84% 96% 88%;
@@ -119,31 +120,31 @@
 
 @keyframes water {
   0% {
-    border-radius: 100% 84% 96% 88%;
+    border-radius: 100% 84% 96% 85%;
   }
   15% {
-    border-radius: 108% 82% 100% 85%;
+    border-radius: 110% 82% 100% 85%;
   }
   25% {
-    border-radius: 110% 78% 106% 79%;
+    border-radius: 110% 83% 106% 79%;
   }
   35% {
-    border-radius: 103% 83% 101% 83%;
+    border-radius: 103% 83% 96% 83%;
   }
   45% {
-    border-radius: 100% 88% 96% 90%;
+    border-radius: 100% 88% 96% 96%;
   }
   55% {
     border-radius: 95% 88% 92% 96%;
   }
   65% {
-    border-radius: 92% 95% 92% 103%;
+    border-radius: 90% 95% 92% 103%;
   }
   75% {
-    border-radius: 90% 92% 88% 103%;
+    border-radius: 90% 87% 88% 103%;
   }
   90% {
-    border-radius: 97% 87% 92% 95%;
+    border-radius: 97% 87% 96% 95%;
   }
   100% {
     border-radius: 100% 84% 96% 88%;
@@ -186,8 +187,8 @@
 .water-droplet2 {
   -webkit-animation: water 6s;
           animation: water 6s;
-  width: 128px;
-  height: 134.4px;
+  width: 88px;
+  height: 92.4px;
   border-radius: 100% 84% 96% 88%;
   position: relative;
   top: 31%;
@@ -200,8 +201,8 @@
 .water-droplet2:after {
   content: "";
   position: absolute;
-  width: 98.4px;
-  height: 72px;
+  width: 67.65px;
+  height: 49.5px;
   top: 31%;
   left: 80%;
   background: transparent;
@@ -318,8 +319,8 @@
 .water-droplet6 {
   -webkit-animation: water 6s;
           animation: water 6s;
-  width: 160px;
-  height: 168px;
+  width: 144px;
+  height: 151.2px;
   border-radius: 100% 84% 96% 88%;
   position: relative;
   top: 10%;
@@ -332,8 +333,8 @@
 .water-droplet6:after {
   content: "";
   position: absolute;
-  width: 123px;
-  height: 90px;
+  width: 110.7px;
+  height: 81px;
   top: 10%;
   left: 40%;
   background: transparent;

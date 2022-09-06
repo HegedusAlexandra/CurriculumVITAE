@@ -4,7 +4,7 @@
 function Gallery() {
   return (
     <div>
-      
+      Nothing
     </div>
   );
 }

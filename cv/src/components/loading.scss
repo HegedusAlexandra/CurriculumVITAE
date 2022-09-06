@@ -1,11 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
 
 
 .greeting{     
     width: 100%;
     height: 100vh;
     
-    background-color: rgb(0, 2, 40);  
+    background-color: #010627;  
 }
 
 .spanBox{
@@ -22,7 +22,7 @@
     span{
     
     color: whitesmoke;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'Quattrocento', serif;
     font-size: 100px;
     margin:4px;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5), 
@@ -94,15 +94,15 @@ content: "";
 }
 
 @keyframes water {
-    0% {border-radius: 100% 84% 96% 88%}
-    15% {border-radius: 108% 82% 100% 85%;}
-    25%{border-radius: 110% 78% 106% 79%;}
-    35% {border-radius: 103% 83% 101% 83%;}
-    45% {border-radius: 100% 88% 96% 90%;}
+    0% {border-radius: 100% 84% 96% 85%}
+    15% {border-radius: 110% 82% 100% 85%;}
+    25%{border-radius: 110% 83% 106% 79%;}
+    35% {border-radius: 103% 83% 96% 83%;}
+    45% {border-radius: 100% 88% 96% 96%;}
     55% {border-radius: 95% 88% 92% 96%;}
-    65% {border-radius: 92% 95% 92% 103%;}
-    75%{border-radius: 90% 92% 88% 103%;}
-    90% {border-radius: 97% 87% 92% 95%;}
+    65% {border-radius: 90% 95% 92% 103%;}
+    75%{border-radius: 90% 87% 88% 103%;}
+    90% {border-radius: 97% 87% 96% 95%;}
     100% {border-radius: 100% 84% 96% 88%;}
 }
   
@@ -115,11 +115,11 @@ content: "";
 }
 
 .water-droplet2 {
-    @include theme( $randm:0.8, $randp:0.62, $randpo:1.6);
+    @include theme( $randm:0.55, $randp:0.62, $randpo:1.6);
   }
   
 .water-droplet2:after {
-    @include themed( $randm:0.8, $randp:0.62, $randpo:1.6);
+    @include themed( $randm:0.55, $randp:0.62, $randpo:1.6);
 }
 
 .water-droplet3 {
@@ -147,11 +147,11 @@ content: "";
 }
 
 .water-droplet6 {
-    @include theme($randm:1, $randp:0.2, $randpo:0.8);
+    @include theme($randm:0.9, $randp:0.2, $randpo:0.8);
   }
   
 .water-droplet6:after {
-    @include themed( $randm:1, $randp:0.2, $randpo:0.8);
+    @include themed( $randm:0.9, $randp:0.2, $randpo:0.8);
 }
 
 .water-droplet7 {

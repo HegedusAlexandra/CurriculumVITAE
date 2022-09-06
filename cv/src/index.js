@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Gallery from './components/Gallery';
 import Experience from './components/Experience';
+import Message from './components/Message'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
       <Route path="/" element={<App />}>
         <Route path="experience" element={<Experience />} />
         <Route path="gallery" element={<Gallery />} />
+        <Route path="message" element={<Message />} />
       </Route>      
     </Routes>
   </BrowserRouter>
