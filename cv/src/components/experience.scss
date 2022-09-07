@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
 
 .expBack{
+    display: grid;
+    grid-template-columns: [line1] 200px [line2] 300px [line3] auto [line4] 200px [line5] 200px [lastLine];
+    grid-template-rows: [row1] 300px [row2] 100px [row3] auto [lastRow];
+
+    grid-template-areas:
+    "timeline head head . ."
+    "timeline. . me . "
+    "timeline . . . ."
+   
+    ;
 
     width: 100%;
     height: 4000px;
@@ -9,13 +19,7 @@
 }
 
 .container{
-    display: grid;
-    grid-template-columns: [line1] 200px [line2] 300px [line3] auto [line4] 200px [line5] 200px [lastLine];
-    grid-template-rows: [row1] 300px [row2] 100px [row3] auto [lastRow];
-
-    grid-template-areas:
-    ". . . . ."
-    ". . . me . ";
+     grid-area: me;
 
     width:100%;
     height: 3800px;
@@ -35,7 +39,7 @@
   }
 
 img{
-    grid-area: me;
+   
 
     height: 300px;
     border-radius: 50%;
@@ -44,6 +48,8 @@ img{
 }
 
 h1{ 
+    grid-area: head;
+    background-color:#FCF0E3 ;
     position: fixed;
     color: #a18b74;
     text-shadow: 2px 4px 4px rgba(0,0,0,0.2),
@@ -54,5 +60,11 @@ h1{
     font-family: 'Quattrocento', serif;
     font-size: 80px;
     margin-left: 60px;
+    padding: 40px;
     letter-spacing: 8px;
 }
+
+svg{
+    grid-area: timeline;
+}
+

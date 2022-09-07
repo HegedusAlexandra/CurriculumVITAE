@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
 .expBack {
-  width: 100%;
-  height: 4000px;
-}
-
-.container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: [line1] 200px [line2] 300px [line3] auto [line4] 200px [line5] 200px [lastLine];
       grid-template-columns: [line1] 200px [line2] 300px [line3] auto [line4] 200px [line5] 200px [lastLine];
   -ms-grid-rows: [row1] 300px [row2] 100px [row3] auto [lastRow];
       grid-template-rows: [row1] 300px [row2] 100px [row3] auto [lastRow];
-      grid-template-areas: ". . . . ." ". . . me . ";
+      grid-template-areas: "timeline head head . ." "timeline. . me . " "timeline . . . .";
+  width: 100%;
+  height: 4000px;
+}
+
+.container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: me;
   width: 100%;
   height: 3800px;
 }
@@ -32,9 +35,6 @@
 }
 
 img {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: me;
   height: 300px;
   border-radius: 50%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -42,12 +42,25 @@ img {
 }
 
 h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  background-color: #FCF0E3;
   position: fixed;
   color: #a18b74;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(255, 255, 255, 0.15), 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   font-family: 'Quattrocento', serif;
   font-size: 80px;
   margin-left: 60px;
+  padding: 40px;
   letter-spacing: 8px;
+}
+
+svg {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: timeline;
 }
 /*# sourceMappingURL=experience.css.map */
