@@ -2,10 +2,66 @@
 
 body{
   height: 100vh;
-  background-color: #FCF0E3;  
+  background-color: antiquewhite;
+  
+}
+
+.mainBody{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./components/hill.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  overflow: hidden;
+}
+
+.emptyMain{
+  display: none;
+}
+
+#fog{
+  position: absolute; 
+  bottom: 0;
+  width: 200%;
+  height: 500px;
+  opacity:0.5;
+  animation-name: mistic;
+  animation-duration: 120s;
+  
+}
+
+@keyframes mistic {
+  
+    0%   { left:-50%;bottom: 0%;} 
+    75% { left:0px;bottom:-50%}
+    100% { left:0px;bottom:-100%}
+  
+}
+
+#fog2{
+  position: absolute;
+  transform:rotateY(180deg);
+  
+  bottom: 0;
+  width: 200%;
+  height: 1100px;
+  opacity:0.4;
+  animation-name: mist;
+  animation-duration: 110s;
+
+  
+}
+
+@keyframes mist {
+  0%   { right:-50%;bottom: 0%;} 
+  75% { right:0px;bottom:-50%}
+  100% { right:0px;bottom:-100%}
 }
 
 .middle{
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,7 +88,7 @@ body{
   align-items: center;
 
   width: 100%;
-  height: 300px;
+  height: 400px;
 
   gap: 20px;
 }
@@ -64,11 +120,11 @@ a{
   border-radius: 27px;
   padding-top: 10px;
 
-  font-size: xx-large;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
-  color: #A18B74;
+  font-size: 38px;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.8);
+  color: black;
   font-family: 'Quattrocento', serif;
-
+  font-weight: bold;
   cursor:pointer;
   
 }

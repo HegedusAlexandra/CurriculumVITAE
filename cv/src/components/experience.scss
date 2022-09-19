@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&family=Quattrocento:wght@400;700&display=swap');
+
+
 
 .expBack{
     display: grid;
-    grid-template-columns: [line1] 200px [line2] 300px [line3] auto [line4] 200px [line5] 200px [lastLine];
-    grid-template-rows: [row1] 300px [row2] 100px [row3] auto [lastRow];
+    grid-template-columns: [line1] 300px [line2] 200px [line3] auto [line4] 300px [line5] 200px [lastLine];
+    grid-template-rows: [row1] 300px [row2] 200px [row3] 200px [row4] 400px [row5] 200px [lastRow];
 
     grid-template-areas:
-    "timeline head head . ."
-    "timeline. . me . "
-    "timeline . . . ."
+    "head head call call ."
+    " year desc  desc me ."  
+    " year1 desc1 desc1 . ."
+    " year2 gimimost gimiregen desc2 ."
+    " . . year3 desc2 ."
    
     ;
 
     width: 100%;
     height: 4000px;
+
+    background-color: antiquewhite;
 
     
 }
@@ -30,16 +36,16 @@
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 2s all ease;
   }
   
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
-  }
+  
 
 img{
-   
+    align-self: center;
 
     height: 300px;
     border-radius: 50%;
@@ -47,11 +53,102 @@ img{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+}
+.year{
+    grid-area: year;
+    color: #FFCC8A;
+    padding-left: 80px;
+    font-size: 80px;
+    font-family: 'Mohave', sans-serif;
+    font-weight: 800;
+    text-shadow: rgba(0, 0, 0, 0.8) 2px 4px 6px;
+}
+
+.expCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: desc;
+    color: #000000;
+   
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Mohave', sans-serif;
+    font-weight: 400;
+    text-shadow: rgba(0, 0, 0, 0.3) 2px 4px 6px;
+}
+
+.call{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    grid-area: call;
+    color: #5e0a0a;
+    text-transform: uppercase;
+    padding-left: 80px;
+    font-size: 40px;
+    font-family: 'Mohave', sans-serif;
+    font-weight: 400;
+    text-shadow: rgba(59, 15, 15, 0.8) 2px 4px 6px;
+}
+
+.year.one {
+ grid-area: year1;
+}
+
+.expCard.one {
+    
+    grid-area: desc1;
+}
+
+.year.two {
+    grid-area: year2;
+   }
+
+.expCard.two {
+    margin-top: 160px;
+    margin-left: 20px;
+    grid-area: desc2;
+}
+
+#gimiregen.reveal{
+    width: 500px;
+    border-radius: 4px 4px 4px 4px;
+    grid-area: gimiregen;
+    margin-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#gimimost.reveal{
+    width: 700px;
+    border-radius: 4px 4px 4px 4px;
+    grid-area: gimimost;
+    margin-top: 120px;
+    transform: translate(50%,0) 2s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.year.three {
+    grid-area: year3;
+   }
+
+#triangelLeft{
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 5%;
+    border-top:2px solid #942c31 ;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+
 h1{ 
     grid-area: head;
-    background-color:#FCF0E3 ;
-    position: fixed;
-    color: #a18b74;
+    
+   text-transform: uppercase;
+    color: #942c31;
     text-shadow: 2px 4px 4px rgba(0,0,0,0.2),
                  0px -5px 10px rgba(255,255,255,0.15),
                 0px 4px 3px rgba(0,0,0,0.4),
@@ -59,12 +156,14 @@ h1{
              0px 18px 23px rgba(0,0,0,0.1);
     font-family: 'Quattrocento', serif;
     font-size: 80px;
-    margin-left: 60px;
-    padding: 40px;
+    margin-left: 140px;
+    
     letter-spacing: 8px;
 }
 
-svg{
-    grid-area: timeline;
-}
+
+
+
+
+
 

@@ -1,19 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&family=Quattrocento:wght@400;700&display=swap");
 .expBack {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [line1] 200px [line2] 300px [line3] auto [line4] 200px [line5] 200px [lastLine];
-      grid-template-columns: [line1] 200px [line2] 300px [line3] auto [line4] 200px [line5] 200px [lastLine];
-  -ms-grid-rows: [row1] 300px [row2] 100px [row3] auto [lastRow];
-      grid-template-rows: [row1] 300px [row2] 100px [row3] auto [lastRow];
-      grid-template-areas: "timeline head head . ." "timeline. . me . " "timeline . . . .";
+  -ms-grid-columns: [line1] 300px [line2] 200px [line3] auto [line4] 300px [line5] 200px [lastLine];
+      grid-template-columns: [line1] 300px [line2] 200px [line3] auto [line4] 300px [line5] 200px [lastLine];
+  -ms-grid-rows: [row1] 300px [row2] 200px [row3] 200px [row4] 400px [row5] 200px [lastRow];
+      grid-template-rows: [row1] 300px [row2] 200px [row3] 200px [row4] 400px [row5] 200px [lastRow];
+      grid-template-areas: "head head call call ." " year desc  desc me ."   " year1 desc1 desc1 . ." " year2 gimimost gimiregen desc2 ." " . . year3 desc2 .";
   width: 100%;
   height: 4000px;
+  background-color: antiquewhite;
 }
 
 .container {
   -ms-grid-row: 2;
-  -ms-grid-column: 3;
+  -ms-grid-column: 4;
   grid-area: me;
   width: 100%;
   height: 3800px;
@@ -24,8 +25,8 @@
   -webkit-transform: translateY(150px);
           transform: translateY(150px);
   opacity: 0;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
 }
 
 .reveal.active {
@@ -34,33 +35,152 @@
   opacity: 1;
 }
 
-img {
+.reveal.active img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   height: 300px;
   border-radius: 50%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-h1 {
-  -ms-grid-row: 1;
+.year {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: year;
+  color: #FFCC8A;
+  padding-left: 80px;
+  font-size: 80px;
+  font-family: 'Mohave', sans-serif;
+  font-weight: 800;
+  text-shadow: rgba(0, 0, 0, 0.8) 2px 4px 6px;
+}
+
+.expCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
-  grid-area: head;
-  background-color: #FCF0E3;
+  grid-area: desc;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Mohave', sans-serif;
+  font-weight: 400;
+  text-shadow: rgba(0, 0, 0, 0.3) 2px 4px 6px;
+}
+
+.call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: call;
+  color: #5e0a0a;
+  text-transform: uppercase;
+  padding-left: 80px;
+  font-size: 40px;
+  font-family: 'Mohave', sans-serif;
+  font-weight: 400;
+  text-shadow: rgba(59, 15, 15, 0.8) 2px 4px 6px;
+}
+
+.year.one {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: year1;
+}
+
+.expCard.one {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc1;
+}
+
+.year.two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: year2;
+}
+
+.expCard.two {
+  margin-top: 160px;
+  margin-left: 20px;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: desc2;
+}
+
+#gimiregen.reveal {
+  width: 500px;
+  border-radius: 4px 4px 4px 4px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: gimiregen;
+  margin-top: 60px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#gimimost.reveal {
+  width: 700px;
+  border-radius: 4px 4px 4px 4px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: gimimost;
+  margin-top: 120px;
+  -webkit-transform: translate(50%, 0) 2s;
+          transform: translate(50%, 0) 2s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.year.three {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: year3;
+}
+
+#triangelLeft {
   position: fixed;
-  color: #a18b74;
+  z-index: -1;
+  left: 0;
+  top: 5%;
+  border-top: 2px solid #942c31;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  text-transform: uppercase;
+  color: #942c31;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(255, 255, 255, 0.15), 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   font-family: 'Quattrocento', serif;
   font-size: 80px;
-  margin-left: 60px;
-  padding: 40px;
+  margin-left: 140px;
   letter-spacing: 8px;
-}
-
-svg {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  grid-area: timeline;
 }
 /*# sourceMappingURL=experience.css.map */
