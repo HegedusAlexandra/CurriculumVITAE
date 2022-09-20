@@ -11,12 +11,14 @@ import {
 import Gallery from './components/Gallery';
 import Experience from './components/Experience';
 import Message from './components/Message'
+import Motivation from './components/Motivation'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route path="/"  element={<App />}>
+        <Route path="motivation" element={<Motivation />} />
         <Route path="experience" element={<Experience />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="message" element={<Message />} />

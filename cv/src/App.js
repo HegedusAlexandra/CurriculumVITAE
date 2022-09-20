@@ -34,7 +34,8 @@ function App() {
 
   return (
     <>    
-    {loading ? (<Loading/> ) : (<div>
+    {loading ? (<Loading/> ) : (
+    <div>
       <div className={body}>
       <img src={fog} id="fog" alt='fog'/>
       <img src={fog} id="fog2" alt='fog'/>
@@ -45,7 +46,7 @@ function App() {
           <div id="sphere1"></div>
         </div>
         <nav  className={navStyle} onClick={floatLeft} >
-          <Link to="/">Motivation</Link>
+          <Link to="/motivation">Motivation</Link>
           <Link to="/experience">Experience</Link>
           <Link to="/gallery">Gallery</Link>
           <Link to="/message">Contact</Link>

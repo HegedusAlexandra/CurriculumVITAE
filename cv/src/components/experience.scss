@@ -4,16 +4,18 @@
 
 .expBack{
     display: grid;
-    grid-template-columns: [line1] 300px [line2] 200px [line3] auto [line4] 300px [line5] 200px [lastLine];
-    grid-template-rows: [row1] 300px [row2] 200px [row3] 200px [row4] 400px [row5] 200px [lastRow];
+    grid-template-columns: [line1] 300px [line2] 300px [line3] auto [line4] 300px [line5] 200px [lastLine];
+    grid-template-rows: [row1] 300px [row2] 300px [row3] 300px [row4] 500px [row5] 300px [row6] 200px [row7] 400px [row8] 200px [lastRow];
 
     grid-template-areas:
     "head head call call ."
     " year desc  desc me ."  
     " year1 desc1 desc1 . ."
-    " year2 gimimost gimiregen desc2 ."
-    " . . year3 desc2 ."
-   
+    " year2 gimiregen . desc2 ."
+    " year3 year3 desc3 desc2 ."    
+    "desc5 desc5 desc5 year4 desc4 "
+  
+    " year5 year5 gundel desc6  desc6 "
     ;
 
     width: 100%;
@@ -56,12 +58,12 @@ img{
 }
 .year{
     grid-area: year;
-    color: #FFCC8A;
+    color: #edd48e;
     padding-left: 80px;
     font-size: 80px;
     font-family: 'Mohave', sans-serif;
     font-weight: 800;
-    text-shadow: rgba(0, 0, 0, 0.8) 2px 4px 6px;
+    text-shadow: rgb(0, 0, 0) 2px 4px 6px;
 }
 
 .expCard{
@@ -83,7 +85,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    color:#edede7dd;
     grid-area: call;
     color: #5e0a0a;
     text-transform: uppercase;
@@ -114,32 +116,78 @@ img{
 }
 
 #gimiregen.reveal{
-    width: 500px;
+    width: 600px;
     border-radius: 4px 4px 4px 4px;
     grid-area: gimiregen;
     margin-top: 60px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-#gimimost.reveal{
-    width: 700px;
-    border-radius: 4px 4px 4px 4px;
-    grid-area: gimimost;
-    margin-top: 120px;
-    transform: translate(50%,0) 2s;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
 .year.three {
+    color: #000000;
     grid-area: year3;
+    font-size: 160px;
+    text-shadow: rgba(163, 163, 163, 0.3) 2px 4px 4px;
    }
 
-#triangelLeft{
+.expCard.three {
+    color: #edd48e;
+   
+    margin-right: 100px;
+    grid-area: desc3;
+}
+
+.year.four {
+    
+    grid-area: year4;
+   }
+
+.expCard.four {
+    margin-top: 160px;
+    margin-right: 40px;
+    grid-area: desc4;
+    font-size: 20px;
+}
+
+.year.five {
+   
+    margin: auto;
+    font-size: 120px;
+    grid-area: year5;
+   }
+
+.expCard.five {
+    margin-top: 160px;
+    margin-left: 10px;
+    grid-area: desc5;
+    font-size: 30px;
+    color: #5e0a0a;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.expCard.six {
+    margin-top: 160px;
+    margin-right: 40px;
+    grid-area: desc6;
+    font-size: 20px;
+    color: #000000;
+
+}
+
+#gundel{
+    width: 300px;
+    grid-area: gundel;
+    align-self: center;
+}
+
+#circleLeft{
     position: fixed;
-    z-index: -1;
+    
     left: 0;
-    top: 5%;
-    border-top:2px solid #942c31 ;
+    top: 0%;
+    /* border-top:2px solid #942c31 ; */
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     
 }
