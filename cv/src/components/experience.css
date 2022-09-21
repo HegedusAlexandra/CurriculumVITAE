@@ -4,11 +4,11 @@
   display: grid;
   -ms-grid-columns: [line1] 300px [line2] 300px [line3] auto [line4] 300px [line5] 200px [lastLine];
       grid-template-columns: [line1] 300px [line2] 300px [line3] auto [line4] 300px [line5] 200px [lastLine];
-  -ms-grid-rows: [row1] 300px [row2] 300px [row3] 300px [row4] 500px [row5] 300px [row6] 200px [row7] 400px [row8] 500px [row9] 400px [row10] 250px [row11] 200px [lastRow];
-      grid-template-rows: [row1] 300px [row2] 300px [row3] 300px [row4] 500px [row5] 300px [row6] 200px [row7] 400px [row8] 500px [row9] 400px [row10] 250px [row11] 200px [lastRow];
-      grid-template-areas: "head head call call ." " year desc desc me ." " year1 desc1 desc1 desc1 ." " year2 gimiregen . desc2 ." " year3 year3 desc3 desc2 ." "desc5 desc5 desc5 year4 desc4 " " year5 year5 gundel desc6  desc6 " " oyster year6 year6 desc6 desc6 " ". . zugspitze zugspitze zugspitze" "matterhorn matterhorn year8  . ." ". . desc8  desc8 .";
+  -ms-grid-rows: [row1] 300px [row2] 300px [row3] 300px [row4] 500px [row5] 300px [row6] 200px [row7] 400px [row8] 500px [row9] 400px [row10] 250px [row11] 350px [row12] 200px [row13] 200px [row14] 400px [row15] 200px [row16] 300px [row17] 200px [row18] 500px [lastRow];
+      grid-template-rows: [row1] 300px [row2] 300px [row3] 300px [row4] 500px [row5] 300px [row6] 200px [row7] 400px [row8] 500px [row9] 400px [row10] 250px [row11] 350px [row12] 200px [row13] 200px [row14] 400px [row15] 200px [row16] 300px [row17] 200px [row18] 500px [lastRow];
+      grid-template-areas: "head head call call ." " year desc desc me ." " year1 desc1 desc1 desc1 ." " year2 gimiregen . desc2 ." " year3 year3 desc3 desc2 ." "desc5 desc5 desc5 year4 desc4 " " year5 year5 gundel desc6  desc6 " " oyster year6 year6 desc6 desc6 " ". . zugspitze zugspitze zugspitze" "matterhorn matterhorn year8  . ." ". . desc8  desc8 ." " . desc9 desc9  year9 ." " year10 year10 desc10 desc10 ." " year11 year11 desc10 desc10 ." " corsica corsica corsica corsica corsica" " . desc12 desc12 year12 ." " desc13 desc13 year13 me2 ." " year14 desc14 desc14 me2 .";
   width: 100%;
-  height: 4000px;
+  height: fit-content200px;
   background-color: antiquewhite;
   overflow: hidden;
 }
@@ -445,6 +445,183 @@
   grid-area: desc8;
   font-size: 30px;
   color: #1e1e1e;
+}
+
+.year.nine {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-left: -80px;
+  margin-top: 160px;
+  font-size: 120px;
+  -ms-grid-row: 12;
+  -ms-grid-column: 4;
+  grid-area: year9;
+}
+
+.expCard.nine {
+  margin-top: 150px;
+  -ms-grid-row: 12;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc9;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.year.ten {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-left: -80px;
+  margin-top: 160px;
+  font-size: 120px;
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: year10;
+}
+
+.expCard.ten {
+  margin-top: 150px;
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: desc10;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+#corsica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 15;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: corsica;
+  width: 100%;
+  border-radius: 4px 4px 4px 4px;
+  background-image: url("Corsica.jpg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: cover;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#corsica .year.eleven {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #5a5a5a;
+  font-size: 100px;
+  -ms-grid-row: 14;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: year11;
+  z-index: 2;
+}
+
+#corsica .expCard.eleven {
+  position: relative;
+  grid-area: desc11;
+  width: 98%;
+  font-size: 30px;
+  color: #000000;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 4px 4px 4px 4px;
+}
+
+.year.twelve {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-left: -80px;
+  font-size: 120px;
+  -ms-grid-row: 16;
+  -ms-grid-column: 4;
+  grid-area: year12;
+}
+
+.expCard.twelve {
+  margin-top: 150px;
+  -ms-grid-row: 16;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc12;
+  font-size: 25px;
+  color: #dabf74;
+}
+
+.year.thirteen {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-left: -80px;
+  margin-top: 160px;
+  font-size: 120px;
+  -ms-grid-row: 17;
+  -ms-grid-column: 3;
+  grid-area: year13;
+}
+
+.expCard.thirteen {
+  margin-top: 150px;
+  -ms-grid-row: 17;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: desc13;
+  font-size: 25px;
+  color: #000000;
+}
+
+.year.fourteen {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #5e0a0a;
+  margin-top: 160px;
+  font-size: 120px;
+  -ms-grid-row: 18;
+  -ms-grid-column: 1;
+  grid-area: year14;
+}
+
+.expCard.fourteen {
+  margin-top: 150px;
+  margin-left: 50px;
+  -ms-grid-row: 18;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc14;
+  font-size: 25px;
+  color: #000000;
+}
+
+#me2 {
+  -ms-grid-row: 17;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: me2;
+  width: 450px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 1;
+  border-radius: 6px 50% 50% 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  opacity: 0.4;
 }
 
 h1 {

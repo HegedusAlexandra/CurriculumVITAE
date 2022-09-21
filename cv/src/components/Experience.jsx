@@ -5,8 +5,8 @@ import gundel from "./gundel.png";
 import gimiregen from "./gimiregen.jpg";
 import rock from "./rock.png";
 import oyster from "./oyster.png"
-
 import matterhorn from "./matterhorn.png"
+import me2 from "./Me.jpeg"
 
 function Experience() {
   const [visib, setVisib] = useState(null);
@@ -66,7 +66,7 @@ function Experience() {
           <circle cx="50%" cy="50%" r={loc} fill="#a83b3bd8" />
         </svg>
       )}
-      <p className="year reveal" style={{color:"#2b2b2b"}}>1990</p>
+      <p className="year reveal" style={{color:"#7b7b7b"}}>1990</p>
       <div className="expCard reveal">
         {" "}
         Born in 12 may 1990 in beautiful saturday.
@@ -161,13 +161,52 @@ function Experience() {
         </div>
           
           <img id="matterhorn" className="reveal" src={matterhorn} alt="matterhorn" />
-          <p className="year eight reveal">2015</p>
+          <p className="year eight reveal">2016</p>
           <div className="expCard eight reveal">
           Already learnt the basics from Kocsis Zsolt master patissier and headed with him to Swiss,Zermatt to Hotel Alpenhof 4* where I worked as a demi pastry chef.
           <br/>
           Also I have worked only three month in Sweden,Trosa,Hotel Boman as a demi pastry and gardemanger chef helping out a swedish friend.
           </div>
           
+        </>
+      )}
+      {visib > 1400 && (
+        <>          
+          <p className="year nine reveal">2017</p>
+          <div className="expCard nine reveal">
+          Commercial Manager Auchan where I had 30 employees (bakers and patissiers) to conduct,take care about ordering,paperwork,HR related cases,HACCP,documentation..etc
+          </div>          
+        </>
+      )}
+      {visib > 1600 && (
+        <>
+          <p className="year ten reveal">2018</p>
+          <div className="expCard ten reveal">At time I have worked two place at the same time a traditional restaurant <p>Kacsa étterem as a cook and patissier</p> and also in <p>Holiday Beach Hotel 4*,Budapest as patissier</p>
+          </div>        
+        <div id="corsica" className="reveal">         
+          <p className="year eleven reveal">2019</p>
+          <div className="expCard eleven reveal">
+          A summer in Corsica for the Langley Hotel Bonaparte
+          </div>           
+        </div> 
+        <p className="year twelve reveal">2020</p>
+          <div className="expCard twelve reveal">
+            <p>Hotel Kristall 4*,Pertisau as a chef de partie patissier</p> and at the end of the year <p>Arlberg Hospiz 5*,St.Cristoph as a pastry chef</p> by conducting 3 people.
+            I had to leave it when the first news about COVID reached us in the beggining of 2021.
+          </div>        
+        </>
+      )}
+      {visib > 1800 && (
+        <>          
+          <p className="year thirteen reveal">2021</p>
+          <div className="expCard thirteen reveal">
+          Under the period of epidemic I found my place in <p>Duna Garden 4*,Budapest as a patissier chef</p> and helped for <p>Cake & More by Garannikova</p>
+          </div>
+          <p className="year fourteen reveal">2022</p>
+          <div className="expCard fourteen reveal">
+          As soon as I got my vaccination I headed to Austria again and I found my place at <p>Almfamilyhotel 4*s,Obertilliach as a pastry chef</p>
+          </div> 
+          <img id="me2" src={me2} alt="me" />          
         </>
       )}
     </div>
