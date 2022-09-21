@@ -29,6 +29,7 @@ body{
   opacity:0.6;
   animation-name: mistic;
   animation-duration: 80s;
+  animation-direction: alternate;
   
 }
 
@@ -50,7 +51,7 @@ body{
   opacity:0.5;
   animation-name: mist;
   animation-duration: 90s;
-
+  animation-direction: alternate;
   
 }
 
@@ -123,7 +124,7 @@ a{
 
   font-size: 38px;
   text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);
-  color:#a83b3b;
+  color:#d41616;
   font-family: 'Quattrocento', serif;
   font-weight: bold;
   cursor:pointer;

@@ -3,6 +3,10 @@ import "./experience.css";
 import me from "./Én.jpg";
 import gundel from "./gundel.png";
 import gimiregen from "./gimiregen.jpg";
+import rock from "./rock.png";
+import oyster from "./oyster.png"
+
+import matterhorn from "./matterhorn.png"
 
 function Experience() {
   const [visib, setVisib] = useState(null);
@@ -14,8 +18,9 @@ function Experience() {
       /* console.log('window.scrollY:', window.scrollY); */
       setVisib(window.scrollY);
       setLoc((loc) => 200 + window.scrollY / 2);
-      if (window.scrollY > 800 ) {setLoc2((loc2) => 0 + window.scrollY / 4)};
-      
+      if (window.scrollY > 800) {
+        setLoc2((loc2) => 0 + window.scrollY / 4);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -45,12 +50,23 @@ function Experience() {
 
   return (
     <div className="expBack">
-      <h1> Experiences </h1>
-      {visib>100 && <svg height="100vh" width="100%" id="circleLeft">
-        <circle cx="50%" cy="50%" r={loc} fill="#a83b3bd8" />
-        {/* <polygon points="" style={{"fill": }} />  */}
-      </svg>}
-      <p className="year reveal">1990</p>
+      <img
+        id="rock"
+        src={rock}
+        alt="rock"
+        style={{
+          transform: `rotateZ(-${visib/5}deg)`,
+          height: `${150 - visib / 20}vh`,
+          top:`${10 + visib/16}%`
+        }}
+      />
+
+      {visib > 80 && (
+        <svg height="100vh" width="100%" id="circleLeft">
+          <circle cx="50%" cy="50%" r={loc} fill="#a83b3bd8" />
+        </svg>
+      )}
+      <p className="year reveal" style={{color:"#2b2b2b"}}>1990</p>
       <div className="expCard reveal">
         {" "}
         Born in 12 may 1990 in beautiful saturday.
@@ -58,14 +74,20 @@ function Experience() {
       <div className="container reveal">
         <img src={me} alt="me" />
       </div>
-      {visib < 100 && <div className="call"> Scroll for more!</div>}
+      {visib < 100 && (
+        <div className="call">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>Scroll down!
+        </div>
+      )}
 
       {visib > 100 && (
         <>
           <p className="year one reveal">1996</p>
           <div className="expCard one reveal">
-            {" "}
-            I have spent my first years in Móra Ferenc primary school in Miskolc
+            I have spent my first years in <p>Móra Ferenc primary school</p> in
+            Miskolc
           </div>
         </>
       )}
@@ -84,45 +106,70 @@ function Experience() {
 
           <div className="expCard two reveal">
             {" "}
-            After that I 've been admitted to Diősgyőri secondary grammar school
+            After that I 've been admitted to{" "}
+            <p>Diősgyőri secondary grammar school</p>
             specialized in the subject English.
           </div>
           <p className="year three reveal">2008</p>
           <div className="expCard three reveal">
             {" "}
-            In 2008 I have finished and also get the the english type C certificate and the ECDL certificate.
+            In 2008 I have finished and also get the the{" "}
+            <p>english type C certificate </p> and the <p> ECDL certificate</p>.
           </div>
         </>
       )}
-      {visib>500 && <svg height="100vh" width="100%" id="circleLeft">
-        <circle cx="10%" cy="80%" r={loc2} fill="#edede74d" />
-        
-      </svg>}
-      {visib > 1000 && (<>
-        <p className="year four reveal">2010</p>
-        <div className="expCard four reveal">
-          {" "}
-          I have studied one and a half year Industrial Design Engineering,unfortunately interrupted because of family reasons. 
+      {visib > 500 && (
+        <svg height="100vh" width="100%" id="circleLeft">
+          <circle cx="10%" cy="80%" r={loc2} fill={"#edede74d"} />
+        </svg>
+      )}
+      {visib > 800 && (
+        <>
+          <p className="year four reveal">2010</p>
+          <div className="expCard four reveal">
+            {" "}
+            I have studied one and a half year{" "}
+            <p>Industrial Design Engineering</p>,unfortunately interrupted
+            because of family reasons.
+          </div>
+        </>
+      )}
+      {visib > 1000 && (
+        <>
+          <p className="year five reveal">2012</p>
+          <div className="expCard five reveal">
+            I have studied to be a cook and spent my practice time in tha famous
+            hungarian traditional restaurant the <p>Gundel</p>.
+          </div>
+          <div className="expCard six reveal">
+            After my graduation I was immediately employed and I also started to
+            learn to be a pastry.
+            I had been choosen to go to Zürich and represent Gundel's gastronomy in Hotel St.Gotthard.
+          </div>
+          <img id="gundel" className="reveal" src={gundel} alt="gundel" />
+          <img id="oyster" className="reveal" src={oyster} alt="oyster" />
+          <p className="year six reveal">2013</p>
+        </>
+      )}
+      {visib > 1200 && (
+        <>
+        <div id="zugspitze" className="reveal">
+         
+          <p className="year seven reveal">2014</p>
+          <div className="expCard seven reveal">I have spent almost two beautiful years nearby the Zugspitze in <p>Hotel Mohr 4* as a commis pastry</p></div>
+           
         </div>
-      </>)}
-      {visib > 1200 && (<>
-        <p className="year five reveal">2012</p>
-        <div className="expCard five reveal">
-        
-          I have studied to be a cook and spent my practice time in tha famous hungarian traditional restaurant the Gundel.
-
           
+          <img id="matterhorn" className="reveal" src={matterhorn} alt="matterhorn" />
+          <p className="year eight reveal">2015</p>
+          <div className="expCard eight reveal">
+          Already learnt the basics from Kocsis Zsolt master patissier and headed with him to Swiss,Zermatt to Hotel Alpenhof 4* where I worked as a demi pastry chef.
+          <br/>
+          Also I have worked only three month in Sweden,Trosa,Hotel Boman as a demi pastry and gardemanger chef helping out a swedish friend.
+          </div>
           
-        </div>
-        <div className="expCard six reveal">
-        
-        
-
-          After my graduation I was immediately employed and I also started to learn to be a pastry.
-          
-        </div>
-        <img id="gundel" src={gundel} alt="gundel" />
-      </>)}
+        </>
+      )}
     </div>
   );
 }
