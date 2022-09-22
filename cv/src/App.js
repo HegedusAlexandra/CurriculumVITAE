@@ -3,7 +3,7 @@ import './App.css';
 import Loading from './components/Loading';
 import { Link,Outlet } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import fog from './components/fog.png'
+import fog from './components/pictures/fog.png'
 
 function App() {
 

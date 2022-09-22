@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&family=Quattrocento:wght@400;700&display=swap");
+
+.motivMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+  width: 94%;
+  height: 82 vh;
+
+  margin: auto;
+
+  border-radius: 20px;
+  gap: 8px;
+
+
+}
+
+.motivBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  background-color: rgb(255, 249, 241);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 25%;
+  height: 82vh;
+  
+  h3{
+    color:black;
+    font-family: "Mohave", sans-serif;
+    font-size: 46px;
+    background-color: rgba(255, 255, 255, 0.205);
+    backdrop-filter: blur(3px) ;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    height: 100%;
+  }
+
+  h4{
+    display: none;
+  }
+}
+.motivBox:hover{
+    width: 200%;
+    animation-name: slide;
+    animation-duration: 2s;
+
+    h4{
+        display: flex;
+        align-items: center;
+        color:black;
+        font-family: "Mohave", sans-serif;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.205);
+        backdrop-filter: blur(4px) ;
+        width: 90%;
+        height: 70%;
+        border-radius: 5px 0px 0px 5px;
+        padding: 20px;
+        overflow: hidden;
+      }
+}
+
+@keyframes slide {
+    0%   {width:25%}  
+    100% {width:100%}
+  }
+
+ul{
+    color: black;
+    li{
+        color: white;
+    }
+}

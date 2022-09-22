@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import "./experience.css";
-import me from "./Én.jpg";
-import gundel from "./gundel.png";
-import gimiregen from "./gimiregen.jpg";
-import rock from "./rock.png";
-import oyster from "./oyster.png"
-import matterhorn from "./matterhorn.png"
-import me2 from "./Me.jpeg"
+import me from "./pictures/Én.jpg";
+import gundel from "./pictures/gundel.png";
+import gimiregen from "./pictures/gimiregen.jpg";
+import rock from "./pictures/rock.png";
+import oyster from "./pictures/oyster.png"
+import matterhorn from "./pictures/matterhorn.png"
+import me2 from "./pictures/Me.jpeg"
 
 function Experience() {
   const [visib, setVisib] = useState(null);
@@ -76,9 +76,9 @@ function Experience() {
       </div>
       {visib < 100 && (
         <div className="call">
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>Scroll down!
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+          <div className="chevron"></div>Scroll down!
         </div>
       )}
 

@@ -2,7 +2,7 @@
 
 function Message() {
     return (
-      <div>
+      <div className="messageMain">
         
       </div>
     );

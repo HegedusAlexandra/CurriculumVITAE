@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&family=Quattrocento:wght@400;700&display=swap");
+.motivMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 94%;
+  height: 82 vh;
+  margin: auto;
+  border-radius: 20px;
+  gap: 8px;
+}
+
+.motivBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #fff9f1;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 25%;
+  height: 82vh;
+}
+
+.motivBox h3 {
+  color: black;
+  font-family: "Mohave", sans-serif;
+  font-size: 46px;
+  background-color: rgba(255, 255, 255, 0.205);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+.motivBox h4 {
+  display: none;
+}
+
+.motivBox:hover {
+  width: 200%;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.motivBox:hover h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-family: "Mohave", sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.205);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  width: 90%;
+  height: 70%;
+  border-radius: 5px 0px 0px 5px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+ul {
+  color: black;
+}
+
+ul li {
+  color: white;
+}
+/*# sourceMappingURL=motivation.css.map */
