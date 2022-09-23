@@ -24,6 +24,14 @@ function Message() {
             <div id="sphereMes"></div>
           </div>
         </div>
+        
+        <div className="record">
+        <h1 className="profile">hexapastry@gmail.com</h1>
+          <div className="contLineMes" style={{width:"110%"}}>         
+            <div id="lineMes"> </div>
+            <div id="sphereMes"></div>
+          </div>
+        </div>
         <div className="record" style={{height:"10px"}}>       
           <div className="contLineMes" style={{width:"30%"}}>         
             <div id="lineMes"> </div>
@@ -33,13 +41,6 @@ function Message() {
         <div className="record" style={{height:"10px"}}>       
           <div className="contLineMes" style={{width:"95%"}}>         
             <div id="lineMes"></div>
-            <div id="sphereMes"></div>
-          </div>
-        </div>
-        <div className="record">
-        <h1 className="profile">hexapastry@gmail.com</h1>
-          <div className="contLineMes" style={{width:"110%"}}>         
-            <div id="lineMes"> </div>
             <div id="sphereMes"></div>
           </div>
         </div>
@@ -62,15 +63,15 @@ function Message() {
             <div id="sphereMes"></div>
           </div>
         </div>
-        <div className="record" style={{height:"10px"}}>       
-          <div className="contLineMes" style={{width:"75%"}}>         
+        <div className="record">
+        <h1 className="profile" >+36 20 237 1798</h1>
+          <div className="contLineMes" style={{width:"80%"}}>         
             <div id="lineMes"> </div>
             <div id="sphereMes"></div>
           </div>
         </div>
-        <div className="record">
-        <h1 className="profile" >+36 20 237 1798</h1>
-          <div className="contLineMes" style={{width:"80%"}}>         
+        <div className="record" style={{height:"10px"}}>       
+          <div className="contLineMes" style={{width:"75%"}}>         
             <div id="lineMes"> </div>
             <div id="sphereMes"></div>
           </div>
