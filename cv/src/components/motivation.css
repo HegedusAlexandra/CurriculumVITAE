@@ -62,11 +62,11 @@
 }
 
 .motivBox:hover {
-  width: 200%;
+  width: 100%;
   -webkit-animation-name: slide;
           animation-name: slide;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
 .motivBox:hover h4 {

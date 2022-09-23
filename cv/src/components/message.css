@@ -1,0 +1,139 @@
+.messageMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 72%;
+  height: calc(94vh - 100px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  margin: auto;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cheerUp {
+  width: 40%;
+  height: 100%;
+  background: #780206;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ff9472), to(#f2709c));
+  background: linear-gradient(to right, #ff9472, #f2709c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 20px 0px 0px 20px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.8) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.8) 0px 8px 16px -8px;
+}
+
+.table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.418);
+  border-radius: 0px 20px 20px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.table .record {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 60px;
+  font-size: 30px;
+}
+
+.table .record .contact {
+  font-size: 20px;
+  color: black;
+  margin-left: 20px;
+}
+
+.table .record .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #ff3c00;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: none;
+  padding: 0;
+  margin: 10px;
+  letter-spacing: 0px;
+}
+
+.table .record .contLineMes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 2px;
+}
+
+.table .record #sphereMes {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+  -webkit-box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
+          box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
+}
+
+.table .record #lineMes {
+  width: 70%;
+  height: 6%;
+  -webkit-animation: slideIn 3s;
+          animation: slideIn 3s;
+  background-color: black;
+  -webkit-box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
+          box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
+}
+/*# sourceMappingURL=message.css.map */
