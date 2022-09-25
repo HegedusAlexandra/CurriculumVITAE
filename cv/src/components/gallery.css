@@ -1,1 +1,40 @@
-/* No CSS *//*# sourceMappingURL=gallery.css.map */
+#app {
+  height: 100%;
+}
+
+html,
+.mySwiperBody {
+  position: relative;
+  height: 100%;
+}
+
+.mySwiperBody {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: calc(100vh-200px);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.42) 0px 15px 18px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.42) 0px 15px 18px;
+}
+/*# sourceMappingURL=gallery.css.map */
