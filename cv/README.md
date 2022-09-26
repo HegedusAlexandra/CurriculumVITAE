@@ -1,8 +1,4 @@
-colors:
-#10144A
-#FFCC8A
-#BD9B6F
-#B0854D
-#2D3BFF
-#010627
-
+To start : https://hegedusalexandra.github.io/CurriculumVitae/experience
+Or in the terminal :
+- cd cv
+- npm start
