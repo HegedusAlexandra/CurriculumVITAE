@@ -46,10 +46,10 @@ function App() {
           <div id="sphere1"></div>
         </div>
         <nav  className={navStyle} onClick={floatLeft} >
-          <Link to="/motivation">Motivation</Link>
-          <Link to="/experience">Experience</Link>
-          <Link to="/gallery">Gallery</Link>
-          <Link to="/message">Contact</Link>
+          <Link to="/CurriculumVitae/motivation">Motivation</Link>
+          <Link to="/CurriculumVitae/experience">Experience</Link>
+          <Link to="/CurriculumVitae/gallery">Gallery</Link>
+          <Link to="/CurriculumVitae/message">Contact</Link>
           <a href='https://techterms.com/definition/frontend'>Frontend</a>
         </nav>
         
