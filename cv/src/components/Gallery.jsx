@@ -1,6 +1,6 @@
 // Import Swiper React components
 
-import { EffectCoverflow, Pagination } from 'swiper';
+import { Autoplay, Pagination, Navigation, EffectCoverflow } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -63,10 +63,17 @@ function Gallery() {
   return (
     <div className="MySwiperBody">
     <Swiper
+    autoplay={{
+      delay: 5000,
+      disableOnInteraction: false,
+    }}
+    slidesPerView={3}
+    spaceBetween={30}
+    slidesPerGroup={1}
+    loop={true}
     effect={"coverflow"}
     grabCursor={true}
     centeredSlides={true}
-    slidesPerView={"auto"}
     coverflowEffect={{
       rotate: 30,
       stretch: 0,
@@ -75,7 +82,8 @@ function Gallery() {
       slideShadows: true,
     }}
     pagination={true}
-    modules={[EffectCoverflow, Pagination]}
+    navigation={true}
+    modules={[Autoplay,Navigation,EffectCoverflow, Pagination]}
     className="mySwiper"
   >
       
@@ -104,7 +112,7 @@ function Gallery() {
       <SwiperSlide><img src={lemongrass} alt="none" /></SwiperSlide>
       <SwiperSlide><img src={love} alt="none" /></SwiperSlide>
       <SwiperSlide><img src={mint} alt="none" /></SwiperSlide>
-      <SwiperSlide><img src={oreo} alt="none" /></SwiperSlide>
+   
       <SwiperSlide><img src={phisalys} alt="none" /></SwiperSlide>
       <SwiperSlide><img src={popsicle} alt="none" /></SwiperSlide>
       <SwiperSlide><img src={raspberry} alt="none" /></SwiperSlide>
@@ -115,9 +123,9 @@ function Gallery() {
       <SwiperSlide><img src={rock} alt="none" /></SwiperSlide>
       <SwiperSlide><img src={strawberry} alt="none" /></SwiperSlide>
       <SwiperSlide><img src={swarzwalder} alt="none" /></SwiperSlide>
-      <SwiperSlide><img src={truffel} alt="none" /></SwiperSlide>
+      
       <SwiperSlide><img src={truffelRow} alt="none" /></SwiperSlide>
-      <SwiperSlide><img src={twig} alt="none" /></SwiperSlide>
+    
       <SwiperSlide><img src={twirl} alt="none" /></SwiperSlide>
       <SwiperSlide><img src={twoTone} alt="none" /></SwiperSlide>
 
