@@ -44,10 +44,10 @@ function Motivation() {
         <h4 style={{letterSpacing:"6px"}}>
           Honest. Loyal. Trustworthy. Dependable. Open-Minded. Responsible and
           Kind. Courageous. Wholehearted. Clean. Initiative and Motivated.
-          Mature and have a Professional Attitude. Analytical Skills. Teamplayer.
+          Professional Attitude. Analytical. Industrial. Practical. Realistic. Teamplayer.
           Adaptable and Flexible. Dependable. Creative and
           Intelligent. Organized. Problem solving. Not afraid to give help and
-          ask for help.Passionate about work.Agile.Have irony.Empathetic.
+          ask for help.Passionate about work.Agile.Empathetic.
         </h4>
       </div>
       <div className="motivBox" style={studies}>
@@ -62,8 +62,8 @@ function Motivation() {
           <ul>Finished school and certificates:
             <li> Pastry certificate</li>
             <li> Cook certificate</li>
-            <li> ECDL certificate</li>
-            <li> Frontend Developer certificate</li>
+            <li> ECDL certificate(basic knowledge about computers and windows office)</li>
+            <li> Frontend Developer certificate(website design)</li>
             <li> Driving licence</li>
           </ul>
           <ul>Not yet finished universities:
@@ -75,7 +75,7 @@ function Motivation() {
       <div className="motivBox" style={aims}>
         <h3> Freetime</h3>
         <h4>
-          I plan to learn german and italian until advanced level.I like to cycling,listening to music(usually nowadays classical rock and some metal but I am interested almost all kind of a music).I would like to keep on studying to play an instrument (I learned to play on violin and bass).I am very fond of reading ( Fantasy,Classical,Historical,Economical,Philosophical,Psichological ) and also going out with my friends or co-workers.Lately I am also making websites :) .
+          I intend to continue my understanding of German and Italian to highly advanced level.I enjoy cycling,listening to music(all kind).I can play the violin and bass,to a degree,and continue to practice.I read a lot and have an eclectic tastes.I enjoy socializing with my friend and co-workers.I am interested in website design and what you are currently reading is my own work .
         </h4>
       </div>
     </div>

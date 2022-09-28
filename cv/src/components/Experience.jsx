@@ -60,20 +60,11 @@ function Experience() {
           top:`${10 + visib/16}%`
         }}
       />
-
       {visib > 80 && (
         <svg height="100vh" width="100%" id="circleLeft">
           <circle cx="50%" cy="50%" r={loc} fill="#a83b3bd8" />
         </svg>
-      )}
-      <p className="year reveal" style={{color:"#7b7b7b"}}>1990</p>
-      <div className="expCard reveal">
-        {" "}
-        Born in 12 may 1990 in beautiful saturday.
-      </div>
-      <div className="container reveal">
-        <img src={me} alt="me" />
-      </div>
+      )}      
       {visib < 100 && (
         <div className="call">
           <div className="chevron"></div>
@@ -81,17 +72,23 @@ function Experience() {
           <div className="chevron"></div>Scroll down!
         </div>
       )}
-
       {visib > 100 && (
         <>
+        <p className="year reveal" style={{color:"#7b7b7b"}}>1990</p>
+      <div className="expCard reveal">
+        {" "}
+        Born on 12th May 1990 in beautiful saturday.
+      </div>
+      <div className="container reveal">
+        <img src={me} alt="me" />
+      </div>
           <p className="year one reveal">1996</p>
           <div className="expCard one reveal">
-            I have spent my first years in <p>Móra Ferenc primary school</p> in
+            I spent my first years in <p>Móra Ferenc primary school</p> in
             Miskolc
           </div>
         </>
       )}
-
       {visib > 200 && (
         <>
           <p className="year two reveal">2002</p>
@@ -106,15 +103,14 @@ function Experience() {
 
           <div className="expCard two reveal">
             {" "}
-            After that I 've been admitted to{" "}
-            <p>Diősgyőri secondary grammar school</p>
-            specialized in the subject English.
+            After that I attended
+            <p>Diősgyőri secondary grammar school</p>where my 
+            specialized subject was English.
           </div>
           <p className="year three reveal">2008</p>
           <div className="expCard three reveal">
             {" "}
-            In 2008 I have finished and also get the the{" "}
-            <p>english type C certificate </p> and the <p> ECDL certificate</p>.
+            In 2008 I completed my secondary education obtaining the highest possible certificate in <p>English</p>  and the <p> ECDL certificate</p>(basic information sience and windows office knowledge).
           </div>
         </>
       )}
@@ -127,10 +123,7 @@ function Experience() {
         <>
           <p className="year four reveal">2010</p>
           <div className="expCard four reveal">
-            {" "}
-            I have studied one and a half year{" "}
-            <p>Industrial Design Engineering</p>,unfortunately interrupted
-            because of family reasons.
+            In 2010 I commenced studies in <p>Industrial Design Engineering</p>.However this was interrupted after 18 month due to family circumstances.
           </div>
         </>
       )}
@@ -138,13 +131,11 @@ function Experience() {
         <>
           <p className="year five reveal">2012</p>
           <div className="expCard five reveal">
-            I have studied to be a cook and spent my practice time in tha famous
-            hungarian traditional restaurant the <p>Gundel</p>.
+            I started my training and become a chef and was accepted in the famous traditional hungarian restaurant called <p>Gundel</p>.
           </div>
           <div className="expCard six reveal">
-            After my graduation I was immediately employed and I also started to
-            learn to be a pastry.
-            I had been choosen to go to Zürich and represent Gundel's gastronomy in Hotel St.Gotthard.
+            In 2012 I graduated as a chef and opted to specialise in Patisserie.I was choosen to go to Zurich and represented Gundel's gastronomy in the 4star
+           Hotel St.Gotthard in the centre of the city.
           </div>
           <img id="gundel" className="reveal" src={gundel} alt="gundel" />
           <img id="oyster" className="reveal" src={oyster} alt="oyster" />
@@ -156,16 +147,17 @@ function Experience() {
         <div id="zugspitze" className="reveal">
          
           <p className="year seven reveal">2014</p>
-          <div className="expCard seven reveal">I have spent almost two beautiful years nearby the Zugspitze in <p>Hotel Mohr 4* as a commis pastry</p></div>
+          <div className="expCard seven reveal">I worked as a Commis Pastry Chef in the <p>Hotel Mohr 4*</p></div> near the Zugspitze.
            
         </div>
           
           <img id="matterhorn" className="reveal" src={matterhorn} alt="matterhorn" />
           <p className="year eight reveal">2016</p>
           <div className="expCard eight reveal">
-          Already learnt the basics from Kocsis Zsolt master patissier and headed with him to Swiss,Zermatt to Hotel Alpenhof 4* where I worked as a demi pastry chef.
+            I learned from Kocsis Zsolt Master Patissier and in 2015  followed him to the 
+         <p> Swiss,Zermatt to Hotel Alpenhof 4* </p> where I was employed as a Demi Pastry Chef.
           <br/>
-          Also I have worked only three month in Sweden,Trosa,Hotel Boman as a demi pastry and gardemanger chef helping out a swedish friend.
+          Also I had working <p> Sweden,Trosa,Hotel Boman </p> helping out a friend.
           </div>
           
         </>
@@ -174,25 +166,25 @@ function Experience() {
         <>          
           <p className="year nine reveal">2017</p>
           <div className="expCard nine reveal">
-          Commercial Manager Auchan where I had 30 employees (bakers and patissiers) to conduct,take care about ordering,paperwork,HR related cases,HACCP,documentation..etc
+          In 2017 I accepted a position as a Commercial Manager with Auchan Retail I had 30 employees (Bakers and Patissiers) under my control,I was responsible for their conduct, training, HR issues,paperwork HACCP and documentation.
           </div>          
         </>
       )}
       {visib > 1600 && (
         <>
           <p className="year ten reveal">2018</p>
-          <div className="expCard ten reveal">At time I have worked two place at the same time a traditional restaurant <p>Kacsa étterem as a cook and patissier</p> and also in <p>Holiday Beach Hotel 4*,Budapest as patissier</p>
+          <div className="expCard ten reveal">2018 Saw me working in two places at the same time.<p>Kacsa Étterem</p> and  <p>Holiday Beach Hotel</p>.Both in Budapest and both 4* where I worked as a Patissier.
           </div>        
         <div id="corsica" className="reveal">         
           <p className="year eleven reveal">2019</p>
           <div className="expCard eleven reveal">
-          A summer in Corsica for the Langley Hotel Bonaparte
+          In 2019 I secured a summer position in Corsica at the <p>Langley Napoleon Bonaparte Hotel</p> again as a Patissier.
           </div>           
         </div> 
         <p className="year twelve reveal">2020</p>
           <div className="expCard twelve reveal">
-            <p>Hotel Kristall 4*,Pertisau as a chef de partie patissier</p> and at the end of the year <p>Arlberg Hospiz 5*,St.Cristoph as a pastry chef</p> by conducting 3 people.
-            I had to leave it when the first news about COVID reached us in the beggining of 2021.
+            <p>Hotel Kristall 4*,Pertisau as a chef de partie patissier</p> and at the end of the year <p>Arlberg Hospiz 5*,St.Cristoph as a pastry chef</p> .
+            I had to leave when the first news about COVID reached us in the beggining of 2021.
           </div>        
         </>
       )}
@@ -200,17 +192,18 @@ function Experience() {
         <>          
           <p className="year thirteen reveal">2021</p>
           <div className="expCard thirteen reveal">
-          Under the period of epidemic I found my place in <p>Duna Garden 4*,Budapest as a patissier chef</p> and helped for <p>Cake & More by Garannikova</p>
+         During the epidemic I obtained a position in <p>Duna Garden 4*,Budapest as a Patissier Chef</p> and helped for <p>Cake & More by Garannikova</p>
           </div>
           <p className="year fourteen reveal">2022</p>
           <div className="expCard fourteen reveal">
-          As soon as I got my vaccination I headed to Austria again and I found my place at <p>Almfamilyhotel 4*s,Obertilliach as a pastry chef</p>
+          After receiving my vaccination I headed to Austria and worked at <p>Almfamilyhotel 4*s,Obertilliach as a pastry chef</p>
           </div> 
-          <img id="me2" src={me2} alt="me" />          
+          <img id="me2" src={me2} alt="me" /> 
+          {/* It may appear that I have moved around quite a lot however this is perfectly normal in the restaurant business where people move to gain knowledge and experience */}         
         </>
       )}
+    
     </div>
-  );
-}
+)}
 
 export default Experience;

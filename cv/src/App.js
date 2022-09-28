@@ -50,7 +50,6 @@ function App() {
           <Link to="/CurriculumVitae/experience">Experience</Link>
           <Link to="/CurriculumVitae/gallery">Gallery</Link>
           <Link to="/CurriculumVitae/message">Contact</Link>
-          <a href='https://techterms.com/definition/frontend'>Frontend</a>
         </nav>
         
         <div className={lineStyle}>
