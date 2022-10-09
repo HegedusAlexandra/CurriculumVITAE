@@ -60,6 +60,37 @@ function Experience() {
           top:`${10 + visib/16}%`
         }}
       />
+      {visib > 200 && (  <button id="scrollUp"
+        onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}
+        style={{
+          textDecoration: "none",
+          width:"fit-content",
+          height: "50px",        
+          background: "rgba(221, 186, 97, 0.4)",
+          marginTop: "10px",
+          padding: "0px",
+          paddingLeft: "60px",
+          paddingRight: "60px",
+          textShadow: "2px 2px 2px rgba(0, 0, 0, 1)",
+          fontFamily: "'Mohave', serif",
+          fontSize: "xx-large",
+          fontWeight: "800",
+          color: "#be3939",
+          textTransform: "uppercase",        
+          cursor: "pointer",        
+          boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+          position: 'fixed',
+          bottom: '40px',
+          right: '40px',
+          textAlign: 'center',
+          zIndex: '4',
+          borderRadius:"10px"
+        }}
+      >
+        Scroll to top
+      </button>)}
       {visib > 80 && (
         <svg height="100vh" width="100%" id="circleLeft">
           <circle cx="50%" cy="50%" r={loc} fill="#a83b3bd8" />

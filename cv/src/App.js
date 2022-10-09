@@ -13,8 +13,23 @@ function App() {
   const [navStyle,setNavStyle] = useState("navMiddle");
   const [lineStyle,setLineStyle] = useState("lineMiddle");
   const [sphereStyle,setsphereStyle] = useState("sphereMiddle")
-  const [body,setBody] = useState("mainBody")
-  
+  const [body,setBody] = useState("mainBody")  
+  const [isMobile, setIsMobile] = useState(false)
+ 
+//choose the screen size 
+const handleResize = () => {
+  if (window.innerWidth < 720) {
+    console.log("resized") 
+    setIsMobile(true)
+  } else {
+      setIsMobile(false)
+  }
+}
+
+// create an event listener
+useEffect(() => {
+  window.addEventListener("resize", handleResize())
+})
 
   useEffect(() => {
     setLoading(true);
@@ -32,9 +47,14 @@ function App() {
     
   }
 
+  function openMenu(){
+    console.log("pressed")
+    setNavStyle("navDropped");
+  }
+
   return (
     <>    
-    {loading ? (<Loading/> ) : (
+    {/* (loading && !isMobile) ? (<Loading/> ) : */ (
     <div>
       <div className={body}>
       <img src={fog} id="fog" alt='fog'/>
@@ -45,13 +65,15 @@ function App() {
           <div id="line"></div>
           <div id="sphere1"></div>
         </div>
-        <nav  className={navStyle} onClick={floatLeft} >
+        <div className='menuContainer'>
+        <button id="menu" onClick={openMenu}>Menu</button> 
+        <nav className={navStyle} onClick={floatLeft}>           
           <Link to="/CurriculumVitae/motivation">Motivation</Link>
           <Link to="/CurriculumVitae/experience">Experience</Link>
           <Link to="/CurriculumVitae/gallery">Gallery</Link>
           <Link to="/CurriculumVitae/message">Contact</Link>
         </nav>
-        
+        </div>
         <div className={lineStyle}>
           <div className={sphereStyle}></div>
           <div id="line"></div>          

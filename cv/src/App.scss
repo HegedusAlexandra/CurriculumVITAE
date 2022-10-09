@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&family=Mohave:wght@400;700&display=swap");
+
+body {
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(255, 248, 233);
+
+    .navLeft {
+      width: 100%;
+      height: 100px;
+    }
+    #menu {
+      all: unset;
+      display: flex;
+      justify-content: center;
+      align-content: flex-start;
+
+      width: 100%;
+      height: 50px;
+      font-size: 38px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+      color: rgb(234, 209, 176);
+      font-family: "Mohave", serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .navLeft {
+      display: none;
+    }
+  }
+}
+
+.mainBody {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./components/hill.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.emptyMain {
+  display: none;
+}
+
+#fog {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 500px;
+  opacity: 0.6;
+  animation-name: mistic;
+  animation-duration: 80s;
+  animation-direction: alternate;
+}
+
+@keyframes mistic {
+  0% {
+    left: -50%;
+    bottom: 0%;
+  }
+  75% {
+    left: 0px;
+    bottom: -50%;
+  }
+  100% {
+    left: 0px;
+    bottom: -100%;
+  }
+}
+
+#fog2 {
+  position: absolute;
+  transform: rotateY(180deg);
+
+  bottom: 0;
+  width: 200%;
+  height: 1100px;
+  opacity: 0.5;
+  animation-name: mist;
+  animation-duration: 90s;
+  animation-direction: alternate;
+}
+
+@keyframes mist {
+  0% {
+    right: -50%;
+    bottom: 0%;
+  }
+  75% {
+    right: 0px;
+    bottom: -50%;
+  }
+  100% {
+    right: 0px;
+    bottom: -100%;
+  }
+}
+
+.middle {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  width: 100%;
+  height: fit-content;
+}
+
+.navMiddle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 400px;
+
+  gap: 20px;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+  height: 100px;
+
+  gap: 20px;
+}
+
+.navDropped{
+  display: block;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #be3939;
+  z-index: 5;
+  left:0;
+  color: antiquewhite;
+}
+
+#menu {
+  display: none;
+}
+
+a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  width: 80%;
+  height: 50px;
+
+  animation: show 3s;
+
+  border-radius: 27px;
+  padding-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  font-size: 38px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 1), -1px -1px 4px rgba(0, 0, 0, 1);
+  color: rgb(246, 237, 225);
+  font-family: "Mohave", serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes show {
+  from {
+    color: #a18b7400;
+  }
+  to {
+    color: antiquewhite;
+  }
+}
+
+a:focus {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  text-decoration: none;
+
+  width: 400px;
+  height: 50px;
+
+  background: rgba(221, 186, 97, 0.2);
+
+  margin-top: 10px;
+  padding: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  font-family: "Mohave", serif;
+  font-size: xx-large;
+  font-weight: 800;
+  color: #be3939;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.line1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  width: 100%;
+  height: 20px;
+}
+
+.lineMiddle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  width: 100%;
+  height: 20px;
+}
+
+.lineLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  width: 100%;
+  height: 20px;
+}
+
+#line {
+  width: 70%;
+  height: 6%;
+
+  animation: slideIn 3s;
+
+  background-color: #a18b74;
+  box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+#sphere1 {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: #a18b74;
+  transform: translate(0, 50%);
+  box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
+}
+
+.sphereMiddle {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: #a18b74;
+  transform: translate(0, -50%);
+}
+
+.sphereLeft {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: #a18b74;
+  transform: translate(0, 50%);
+  box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
+}
