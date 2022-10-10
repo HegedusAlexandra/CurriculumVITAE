@@ -2,6 +2,7 @@ import "./message.css";
 
 function Message() {
   return (
+    <>
     <div className="messageMain">
       <div className="cheerUp"></div>
       <div className="table">
@@ -122,6 +123,7 @@ function Message() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

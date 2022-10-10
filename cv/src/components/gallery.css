@@ -2,14 +2,12 @@
   height: 100%;
 }
 
-html,
-.mySwiperBody {
+.MySwiperBody {
   position: relative;
-  height: 100%;
+  height: 100vh;
 }
 
-.mySwiperBody {
-  background: #eee;
+.MySwiperBody {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -35,5 +33,32 @@ html,
   border-radius: 20px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.42) 0px 15px 18px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.42) 0px 15px 18px;
+}
+
+button#scrollNow {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .MySwiperBody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+  }
+  img {
+    width: 70%;
+    border-radius: 50%;
+  }
 }
 /*# sourceMappingURL=gallery.css.map */

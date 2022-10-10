@@ -221,14 +221,51 @@ body {
 }
 
 .navDropped {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  margin: auto;
   position: fixed;
-  height: 100vh;
+  height: calc(100vh - 50px);
   width: 100%;
   background-color: #be3939;
   z-index: 5;
   left: 0;
   color: antiquewhite;
+  -webkit-animation-name: miniMenu;
+          animation-name: miniMenu;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  overflow: hidden;
+}
+
+@-webkit-keyframes miniMenu {
+  0% {
+    height: 0vh;
+  }
+  100% {
+    height: calc(100vh - 50px);
+  }
+}
+
+@keyframes miniMenu {
+  0% {
+    height: 0vh;
+  }
+  100% {
+    height: calc(100vh - 50px);
+  }
 }
 
 #menu {
@@ -245,7 +282,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  width: 80%;
+  width: 100%;
   height: 50px;
   -webkit-animation: show 3s;
           animation: show 3s;
@@ -254,7 +291,7 @@ a {
   margin-left: 15px;
   margin-right: 15px;
   font-size: 38px;
-  text-shadow: 3px 3px 2px black, -1px -1px 4px black;
+  text-shadow: 3px 3px 2px black, -1px -1px 4px #aeaeae;
   color: #f6ede1;
   font-family: "Mohave", serif;
   letter-spacing: 2px;

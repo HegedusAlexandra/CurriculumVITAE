@@ -2,10 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -13,8 +9,6 @@
       align-content: center;
   width: 72%;
   height: calc(94vh - 100px);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 20px;
   margin: auto;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -135,5 +129,21 @@
   background-color: black;
   -webkit-box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
           box-shadow: rgba(76, 76, 76, 0.8) 2px 4px 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .messageMain {
+    width: 90%;
+    height: calc(94vh - 50px);
+    border: 0px;
+    margin: auto;
+    padding: 0px;
+  }
+  .cheerUp {
+    width: 10%;
+  }
+  .table {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=message.css.map */
