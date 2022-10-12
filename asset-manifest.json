@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CurriculumVITAE/static/css/main.1513f299.css",
-    "main.js": "/CurriculumVITAE/static/js/main.bf31f6ca.js",
+    "main.css": "/CurriculumVITAE/static/css/main.95487d17.css",
+    "main.js": "/CurriculumVITAE/static/js/main.22d2a167.js",
     "static/js/787.a71561b8.chunk.js": "/CurriculumVITAE/static/js/787.a71561b8.chunk.js",
     "static/media/Corsica.jpg": "/CurriculumVITAE/static/media/Corsica.20be2979d4223f6a9535.jpg",
     "static/media/rock.png": "/CurriculumVITAE/static/media/rock.2fb5f7b86196dd40d148.png",
@@ -25,12 +25,10 @@
     "static/media/creamypink.jpg": "/CurriculumVITAE/static/media/creamypink.9f6fd10deb6e373c41cd.jpg",
     "static/media/swarzwalder.jpg": "/CurriculumVITAE/static/media/swarzwalder.b48f35bf3f1e7fa40dcf.jpg",
     "static/media/bar.jpg": "/CurriculumVITAE/static/media/bar.0581029ef9edd69359ce.jpg",
-    "static/media/truffel.jpg": "/CurriculumVITAE/static/media/truffel.512b8a19d08d5e45ef4f.jpg",
     "static/media/color.jpg": "/CurriculumVITAE/static/media/color.dc0467ba22d54c4e6080.jpg",
     "static/media/twirl.jpg": "/CurriculumVITAE/static/media/twirl.9f274ee64074f98efb4e.jpg",
     "static/media/joyD.jpg": "/CurriculumVITAE/static/media/joyD.6f826df2c327b9877d03.jpg",
     "static/media/redconcrete.jpg": "/CurriculumVITAE/static/media/redconcrete.6dba8765c932df9f75b5.jpg",
-    "static/media/twig.jpg": "/CurriculumVITAE/static/media/twig.b5d000a61bba4a65d5dd.jpg",
     "static/media/phisalys.jpg": "/CurriculumVITAE/static/media/phisalys.6e3ca15b682f36448a6f.jpg",
     "static/media/love.jpg": "/CurriculumVITAE/static/media/love.5f440378e846eee298f0.jpg",
     "static/media/rose.jpg": "/CurriculumVITAE/static/media/rose.46ed0cccf85ba4f405bf.jpg",
@@ -43,7 +41,6 @@
     "static/media/greenApple.jpg": "/CurriculumVITAE/static/media/greenApple.318149f4fc263b396593.jpg",
     "static/media/mint.jpg": "/CurriculumVITAE/static/media/mint.5cebba7a61621e0ab07f.jpg",
     "static/media/carrotcake.jpg": "/CurriculumVITAE/static/media/carrotcake.1657a0105f0b97365599.jpg",
-    "static/media/oreo.jpg": "/CurriculumVITAE/static/media/oreo.79342bb9272ed31d113f.jpg",
     "static/media/heart.jpg": "/CurriculumVITAE/static/media/heart.a34d5afc6c2984e96e93.jpg",
     "static/media/birthday.jpg": "/CurriculumVITAE/static/media/birthday.d384c524236d2f1cb052.jpg",
     "static/media/fank.jpeg": "/CurriculumVITAE/static/media/fank.81111347c8da6489db25.jpeg",
@@ -58,12 +55,12 @@
     "static/media/zugspitze.jpg": "/CurriculumVITAE/static/media/zugspitze.f76b0af9460ad32a6cf5.jpg",
     "static/media/Én.jpg": "/CurriculumVITAE/static/media/Én.064ba11877c926f9b7fe.jpg",
     "index.html": "/CurriculumVITAE/index.html",
-    "main.1513f299.css.map": "/CurriculumVITAE/static/css/main.1513f299.css.map",
-    "main.bf31f6ca.js.map": "/CurriculumVITAE/static/js/main.bf31f6ca.js.map",
+    "main.95487d17.css.map": "/CurriculumVITAE/static/css/main.95487d17.css.map",
+    "main.22d2a167.js.map": "/CurriculumVITAE/static/js/main.22d2a167.js.map",
     "787.a71561b8.chunk.js.map": "/CurriculumVITAE/static/js/787.a71561b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1513f299.css",
-    "static/js/main.bf31f6ca.js"
+    "static/css/main.95487d17.css",
+    "static/js/main.22d2a167.js"
   ]
 }
