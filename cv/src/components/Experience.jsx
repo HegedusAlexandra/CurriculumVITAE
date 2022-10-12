@@ -12,6 +12,22 @@ function Experience() {
   const [visib, setVisib] = useState(null);
   const [loc, setLoc] = useState("200");
   const [loc2, setLoc2] = useState("0");
+  const [isMobile, setIsMobile] = useState(false)
+ 
+  //choose the screen size 
+  const handleResize = () => {
+    if (window.innerWidth < 600) {
+      console.log("resized") 
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+  }
+  
+  // create an event listener
+  useEffect(() => {
+    window.addEventListener("resize", handleResize())
+  })
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -50,7 +66,7 @@ function Experience() {
 
   return (
     <div className="expBack">
-      <img
+      {!isMobile && (<img
         id="rock"
         src={rock}
         alt="rock"
@@ -59,7 +75,7 @@ function Experience() {
           height: `${150 - visib / 20}vh`,
           top:`${10 + visib/16}%`
         }}
-      />
+      />)}
       {visib > 200 && (  <button id="scrollUp"
         onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -68,7 +84,7 @@ function Experience() {
           textDecoration: "none",
           width:"fit-content",
           height: "50px",        
-          background: "rgba(221, 186, 97, 0.4)",
+          background: "#edd48e",
           marginTop: "10px",
           padding: "0px",
           paddingLeft: "60px",
@@ -123,7 +139,7 @@ function Experience() {
       {visib > 200 && (
         <>
           <p className="year two reveal">2002</p>
-          {visib > 600 && (
+          {(visib > 600 && !isMobile) && (
             <img
               src={gimiregen}
               className="reveal"
@@ -150,7 +166,7 @@ function Experience() {
           <circle cx="10%" cy="80%" r={loc2} fill={"#edede74d"} />
         </svg>
       )}
-      {visib > 800 && (
+      {visib > 600 && (
         <>
           <p className="year four reveal">2010</p>
           <div className="expCard four reveal">
@@ -158,7 +174,7 @@ function Experience() {
           </div>
         </>
       )}
-      {visib > 1000 && (
+      {visib > 800 && (
         <>
           <p className="year five reveal">2012</p>
           <div className="expCard five reveal">
@@ -173,12 +189,12 @@ function Experience() {
           <p className="year six reveal">2013</p>
         </>
       )}
-      {visib > 1200 && (
+      {visib > 1000 && (
         <>
         <div id="zugspitze" className="reveal">
          
           <p className="year seven reveal">2014</p>
-          <div className="expCard seven reveal">I worked as a Commis Pastry Chef in the <p>Hotel Mohr 4*</p></div> near the Zugspitze.
+          <div className="expCard seven reveal">I worked as a Commis Pastry Chef in the <p>Hotel Mohr 4*</p> near the Zugspitze.</div>
            
         </div>
           
@@ -193,7 +209,7 @@ function Experience() {
           
         </>
       )}
-      {visib > 1400 && (
+      {visib > 1200 && (
         <>          
           <p className="year nine reveal">2017</p>
           <div className="expCard nine reveal">
@@ -201,12 +217,12 @@ function Experience() {
           </div>          
         </>
       )}
-      {visib > 1600 && (
+      {visib > 1400 && (
         <>
           <p className="year ten reveal">2018</p>
           <div className="expCard ten reveal">2018 Saw me working in two places at the same time.<p>Kacsa Étterem</p> and  <p>Holiday Beach Hotel</p>.Both in Budapest and both 4* where I worked as a Patissier.
           </div>        
-        <div id="corsica" className="reveal">         
+          <div id="corsica" className="reveal">         
           <p className="year eleven reveal">2019</p>
           <div className="expCard eleven reveal">
           In 2019 I secured a summer position in Corsica at the <p>Langley Napoleon Bonaparte Hotel</p> again as a Patissier.
@@ -219,7 +235,7 @@ function Experience() {
           </div>        
         </>
       )}
-      {visib > 1800 && (
+      {visib > 1600 && (
         <>          
           <p className="year thirteen reveal">2021</p>
           <div className="expCard thirteen reveal">

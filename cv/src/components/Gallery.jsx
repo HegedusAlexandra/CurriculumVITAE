@@ -229,7 +229,7 @@ function Gallery() {
           textDecoration: "none",
           width:"90%",
           height: "50px",        
-          background: "rgba(221, 150, 97)",
+          background: "#edd48e",
           marginTop: "10px",
           padding: "0px",
           paddingLeft: "60px",

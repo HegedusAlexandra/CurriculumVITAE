@@ -66,7 +66,7 @@ useEffect(() => {
           <div id="sphere1"></div>
         </div>
         <div className='menuContainer'>
-        {isMobile && <button id="menu" onClick={openMenu}>Menu</button>} 
+        {(isMobile && navStyle !== "navMiddle") && <button id="menu" onClick={openMenu}>Menu</button>} 
         <nav className={navStyle} onClick={floatLeft}>           
           <Link to="/CurriculumVitae/motivation">Motivation</Link>
           <Link to="/CurriculumVitae/experience">Experience</Link>

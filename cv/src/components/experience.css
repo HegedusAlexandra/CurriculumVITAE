@@ -8,7 +8,7 @@
       grid-template-rows: [row1] 300px [row2] 300px [row3] 300px [row4] 500px [row5] 300px [row6] 200px [row7] 400px [row8] 500px [row9] 400px [row10] 250px [row11] 350px [row12] 200px [row13] 200px [row14] 400px [row15] 200px [row16] 300px [row17] 200px [row18] 500px [lastRow];
       grid-template-areas: "head head call call ." " year desc desc me ." " year1 desc1 desc1 desc1 ." " year2 gimiregen . desc2 ." " year3 year3 desc3 desc2 ." "desc5 desc5 desc5 year4 desc4 " " year5 year5 gundel desc6  desc6 " " oyster year6 year6 desc6 desc6 " ". . zugspitze zugspitze zugspitze" "matterhorn matterhorn year8  . ." ". . desc8  desc8 ." " . desc9 desc9  year9 ." " year10 year10 desc10 desc10 ." " year11 year11 desc10 desc10 ." " corsica corsica corsica corsica corsica" " . desc12 desc12 year12 ." " desc13 desc13 year13 me2 ." " year14 desc14 desc14 me2 .";
   width: 100%;
-  height: fit-content200px;
+  height: fit-content1000px;
   background-color: antiquewhite;
   overflow: hidden;
 }
@@ -48,6 +48,8 @@
       align-self: center;
   height: 300px;
   border-radius: 50%;
+  padding: 20px;
+  margin: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -636,5 +638,159 @@ h1 {
   font-size: 80px;
   margin-left: 140px;
   letter-spacing: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  img#rock {
+    display: none;
+  }
+  .expBack {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: [line1] 30% [line2] 40% [lastLine];
+        grid-template-columns: [line1] 30% [line2] 40% [lastLine];
+    -ms-grid-rows: [row1] 200px [row2] 100px [row3] 100px [row4] 400px [row5] 100px [row6] 100px [row7] 100px [row8] 100px [row9] 100px [row10] 150px [row11] 100px [row12] 150px [row13] 200px [row14] 100px [row15] 150px [row16] 400px [row17] 100px [row18] 150px [row19] 300px [row20] 20px [row21] 20px [row22] 200px [row23] 200px [row24] 200px [row25] 100px [row26] 150px [row27] 100px [row28] 150px [row29] 50px [row30] 50px [row31] 200px [row32] 100px [row33] 200px [row34] 100px [row35] 150px [row36] 100px [row37] 150px [row38] 100px [lastRow];
+        grid-template-rows: [row1] 200px [row2] 100px [row3] 100px [row4] 400px [row5] 100px [row6] 100px [row7] 100px [row8] 100px [row9] 100px [row10] 150px [row11] 100px [row12] 150px [row13] 200px [row14] 100px [row15] 150px [row16] 400px [row17] 100px [row18] 150px [row19] 300px [row20] 20px [row21] 20px [row22] 200px [row23] 200px [row24] 200px [row25] 100px [row26] 150px [row27] 100px [row28] 150px [row29] 50px [row30] 50px [row31] 200px [row32] 100px [row33] 200px [row34] 100px [row35] 150px [row36] 100px [row37] 150px [row38] 100px [lastRow];
+        grid-template-areas: "call call call" "year year . " "desc desc desc" "me me me" "year1 year1 ." "desc1 desc1 desc1" "year2 year2 ." "desc2 desc2 desc2" "year3 year3 ." "desc3 desc3 desc3" "year4 year4 . " "desc4 desc4 desc4" "gundel gundel gundel" "year5 year5 . " "desc5 desc5 desc5" "oyster oyster oyster" "year6 year6 ." "desc6 desc6 desc6" "zugspitze zugspitze zugspitze" "year7 year7 ." "desc7 desc7 desc7" "matterhorn matterhorn matterhorn " "year8 year8 ." "desc8 desc8 desc8" "year9 year9 ." "desc9 desc9 desc9" "year10 year10 ." "desc10 desc10 desc10" "year11 year11 ." "desc11 desc11 desc11" "corsica corsica corsica" "year12 year12 ." "desc12 desc12 desc12" "year13 year13 ." "desc13 desc13 desc13" " year14 me2 me2 " "desc14 me2 me2" " desc14 me2 me2 ";
+    width: 100%;
+    height: fit-content200px;
+    background-color: #fff8e9;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .expBack .year {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 50px;
+    width: 100%;
+  }
+  .expBack .expCard {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 20px;
+    width: 100%;
+  }
+  .expBack #oyster {
+    width: 300px;
+  }
+  .expBack #me2 {
+    width: 300px;
+  }
+  .expBack #zugspitze {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 19;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: zugspitze;
+    max-width: 400px;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url("zugspitze.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .expBack #zugspitze .year.seven {
+    position: relative;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0px;
+    font-size: 50px;
+    -ms-grid-row: 20;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: year7;
+    z-index: 2;
+  }
+  .expBack #zugspitze .expCard.seven {
+    position: relative;
+    -ms-grid-row: 21;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: desc7;
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+    color: #000000;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 4px 4px 4px 4px;
+  }
+  .expBack #matterhorn {
+    padding: 20px;
+    margin: 0;
+  }
+  .expBack #corsica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-grid-row: 31;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: corsica;
+    width: 400px;
+    margin-left: -20px;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url("Corsica.jpg");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: cover;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .expBack #corsica .year.eleven {
+    border-left: 20px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 50px;
+    -ms-grid-row: 29;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: year11;
+    z-index: 2;
+  }
+  .expBack #corsica .expCard.eleven {
+    -ms-grid-row: 30;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: desc11;
+    width: 98%;
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 4px 4px 4px 4px;
+  }
 }
 /*# sourceMappingURL=experience.css.map */

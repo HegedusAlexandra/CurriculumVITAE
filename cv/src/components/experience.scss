@@ -28,7 +28,7 @@
     /* 18 */ " year14 desc14 desc14 me2 .";
 
   width: 100%;
-  height: fit-content + 200px;
+  height: fit-content + 1000px;
 
   background-color: antiquewhite;
   overflow: hidden;
@@ -63,11 +63,14 @@
 
     height: 300px;
     border-radius: 50%;
+    padding:20px;
+    margin: 10px;
 
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 }
+
 .year {
   grid-area: year;
   color: #edd48e;
@@ -499,4 +502,186 @@ h1 {
   margin-left: 140px;
 
   letter-spacing: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  img#rock{
+    display:none;
+  }
+
+  .expBack {
+    display: grid;
+    grid-template-columns: [line1] 30% [line2] 40% [lastLine];
+    grid-template-rows: [row1] 200px [row2] 100px [row3] 100px [row4] 400px [row5] 100px [row6] 100px [row7] 100px [row8] 100px [row9] 100px[row10] 150px[row11] 100px [row12] 150px [row13] 200px[row14] 100px[row15] 150px [row16] 400px [row17] 100px [row18] 150px [row19] 300px [row20] 20px [row21] 20px [row22] 200px [row23] 200px [row24] 200px [row25] 100px[row26] 150px[row27] 100px [row28] 150px [row29] 50px[row30] 50px[row31] 200px [row32] 100px [row33] 200px [row34] 100px[row35]150px [row36] 100px [row37] 150px [row38] 100px[lastRow];
+  
+    grid-template-areas:
+      /* 1 */ "call call call"              
+      /* 2 */ "year year . "
+      /* 3 */ "desc desc desc"
+      /* 4 */ "me me me"
+      /* 5 */ "year1 year1 ."
+      /* 6 */ "desc1 desc1 desc1"
+      /* 7 */ "year2 year2 ."
+      /* 8 */ "desc2 desc2 desc2"
+      /* 9 */ "year3 year3 ."
+      /* 10 */ "desc3 desc3 desc3"
+      /* 11 */ "year4 year4 . "
+      /* 12 */ "desc4 desc4 desc4"
+      /* 13 */ "gundel gundel gundel"
+      /* 14 */ "year5 year5 . "
+      /* 15 */ "desc5 desc5 desc5"      
+      /* 16 */ "oyster oyster oyster" 
+      /* 17 */ "year6 year6 ." 
+      /* 18 */ "desc6 desc6 desc6"
+      /* 19 */ "zugspitze zugspitze zugspitze"
+      /* 20 */ "year7 year7 ." 
+      /* 21 */ "desc7 desc7 desc7"     
+      /* 22 */ "matterhorn matterhorn matterhorn "
+      /* 23 */ "year8 year8 ." 
+      /* 24 */ "desc8 desc8 desc8"
+      /* 25 */ "year9 year9 ." 
+      /* 26 */ "desc9 desc9 desc9"
+      /* 27 */ "year10 year10 ." 
+      /* 28 */ "desc10 desc10 desc10"
+      /* 29 */ "year11 year11 ." 
+      /* 30 */ "desc11 desc11 desc11"
+      /* 31 */ "corsica corsica corsica"
+      /* 32 */ "year12 year12 ." 
+      /* 33 */ "desc12 desc12 desc12"
+      /* 34 */ "year13 year13 ." 
+      /* 35 */ "desc13 desc13 desc13"
+      /* 36 */ " year14 me2 me2 "
+      /* 37 */  "desc14 me2 me2"
+      /* 38 */ " desc14 me2 me2 "
+     ;
+    
+  
+    width: 100%;
+    height: fit-content + 200px;
+  
+    background-color: rgb(255, 248, 233);
+    padding-left: 20px;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+  
+  .year{
+    margin:0px;
+    padding:0px;
+    border: 0px;
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .expCard{
+    margin:0px;
+    padding:0px;
+    border: 0px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  #oyster{
+    width: 300px;
+  }
+
+  #me2{
+    width: 300px;
+  }
+
+  #zugspitze {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: zugspitze;
+    
+   
+    max-width: 400px;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url("zugspitze.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
+    .year.seven {
+      position: relative;
+      margin: 0;
+      margin-left:20px;
+      padding: 0px;
+      font-size: 50px;
+      grid-area: year7;
+      z-index: 2;
+    }
+  
+    .expCard.seven {
+      position: relative;
+      grid-area: desc7;
+      width: 100%;
+      font-size: 20px;
+     margin: 0;
+      color: #000000;
+      z-index: 2;
+      background: rgba(
+        255,
+        255,
+        255,
+        0.1
+      ); // Make sure this color has an opacity of less than 1
+      backdrop-filter: blur(4px);
+      border-radius: 4px 4px 4px 4px;
+    }
+  }
+
+  #matterhorn{
+    padding: 20px;
+    margin: 0;
+   
+  }
+
+  #corsica {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    grid-area: corsica;
+  
+    width: 400px;
+    margin-left: -20px;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url("Corsica.jpg");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
+    .year.eleven {
+
+      border-left: 20px;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-size: 50px;
+      grid-area: year11;
+      z-index: 2;
+    }
+  
+    .expCard.eleven {
+ 
+      grid-area: desc11;
+      width: 98%;
+      font-size: 20px;
+      color: #ffffff;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+      border-radius: 4px 4px 4px 4px;
+    }
+  }
+  
+ 
+  }
 }

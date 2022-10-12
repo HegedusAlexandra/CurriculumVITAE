@@ -13,7 +13,7 @@ function Message() {
           </div>
         </div>
       <div className="record" style={{height:"10px"}}>       
-          <div className="contLineMes" style={{width:"115%"}}>         
+          <div className="contLineMes" style={{width:"91%"}}>         
             <div id="lineMes"> </div>
             <div id="sphereMes"></div>
           </div>
@@ -28,7 +28,7 @@ function Message() {
         
         <div className="record">
         <h1 className="profile">hexapastry@gmail.com</h1>
-          <div className="contLineMes" style={{width:"110%"}}>         
+          <div className="contLineMes" style={{width:"95%"}}>         
             <div id="lineMes"> </div>
             <div id="sphereMes"></div>
           </div>
@@ -104,7 +104,7 @@ function Message() {
           </div>
         </div>
         <div className="record" style={{height:"10px"}}>        
-          <div className="contLineMes" style={{width:"130%"}}>         
+          <div className="contLineMes" style={{width:"92%"}}>         
             <div id="lineMes"> </div>
             <div id="sphereMes"></div>
           </div>
